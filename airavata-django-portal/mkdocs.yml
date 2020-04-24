@@ -1,0 +1,24 @@
+site_name: Airavata Django Portal
+
+repo_url: https://github.com/apache/airavata-django-portal/
+
+nav:
+  - Home: index.md
+  - User Guide:
+    - Using the integrated CMS: cms.md
+  - Developer Guide:
+    - Adding a Django App: dev/new_django_app.md
+    - Adding a Custom Django App: dev/custom_django_app.md
+    - Developing the Frontend: dev/developing_frontend.md
+    - Developing the Backend: dev/developing_backend.md
+    - Developing a Wagtail Export (theme): dev/wagtail_export.md
+  - Administrator Guide:
+    - Tusd Installation: admin/tusd.md
+  - Tutorials:
+    - Gateways 2019: tutorial/gateways2019_tutorial.md
+
+theme: readthedocs
+
+markdown_extensions:
+  - sane_lists # allow restarting numbering of ordered lists
+  - admonition

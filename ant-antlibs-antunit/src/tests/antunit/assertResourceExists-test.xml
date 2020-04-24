@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project xmlns:au="antlib:org.apache.ant.antunit" default="antunit">
+
+  <import file="antunit-base.xml"/>
+
+  <property name="existing-url" value="https://ant.apache.org/index.html"/>
+  <property name="not-existing-url" value="https://ant.apache.org/foo.html"/>
+
+  <!-- some strange proxy setups hide the 404 results -->
+  <target name="-checkWhetherUrlsThatDontExistAreFound">
+    <condition property="cant.trust.urlcheck">
+      <http url="${not-existing-url}"/>
+    </condition>
+  </target>
+
+  <target name="-logWhetherUrlsThatDontExistAreFound"
+          depends="-checkWhetherUrlsThatDontExistAreFound"
+          if="cant.trust.urlcheck">
+    <echo>Get non-error response for missing URLs</echo>
+  </target>
+
+  <target name="testURL"
+          description="https://issues.apache.org/bugzilla/show_bug.cgi?id=53383">
+    <au:assertNestedResourceExists>
+      <url url="${existing-url}"/>
+    </au:assertNestedResourceExists>
+  </target>
+
+  <target name="testURLUsingRef"
+          description="https://issues.apache.org/bugzilla/show_bug.cgi?id=53383">
+    <url url="${existing-url}" id="antsite"/>
+    <au:assertRefResourceExists refid="antsite"/>
+  </target>
+
+  <target name="testURL-no"
+          depends="-logWhetherUrlsThatDontExistAreFound"
+          unless="cant.trust.urlcheck"
+          description="https://issues.apache.org/bugzilla/show_bug.cgi?id=53383">
+    <au:assertNestedResourceDoesntExist>
+      <url url="${not-existing-url}"/>
+    </au:assertNestedResourceDoesntExist>
+  </target>
+
+  <target name="testURLUsingRef-no"
+          depends="-logWhetherUrlsThatDontExistAreFound"
+          unless="cant.trust.urlcheck"
+          description="https://issues.apache.org/bugzilla/show_bug.cgi?id=53383">
+    <url url="${not-existing-url}" id="antsite-foo"/>
+    <au:assertRefResourceDoesntExist refid="antsite-foo"/>
+  </target>
+
+</project>

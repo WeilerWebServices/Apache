@@ -1,0 +1,27 @@
+{
+  "name": "apex-site",
+  "version": "1.0.0",
+  "authors": [
+    "Andy Perlitch <andyperlitch@gmail.com>"
+  ],
+  "description": "The public website for the Apache Apex Project",
+  "keywords": [
+    "apache",
+    "software",
+    "foundation",
+    "apex",
+    "website"
+  ],
+  "license": "Apache-2.0",
+  "homepage": "http://apex.apache.org/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

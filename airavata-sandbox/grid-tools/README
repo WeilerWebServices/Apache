@@ -1,0 +1,29 @@
+Apache Airavata GRAM Client - README
+Licensed under Apache License 2.0 - http://www.apache.org/licenses/LICENSE-2.0
+--------------------------------------------------------------------------------
+
+About
+=====
+Apache Airavata, a software framework to executing and managing computational jobs on 
+distributed computing resources including local clusters, supercomputers, national grids, 
+academic and commercial clouds. 
+
+The airavata-myproxy-client is a test suite to run stand alone tests to test MyProxy Service
+
+CA Trusted Certificates
+===========================
+* The XSEDE project maintains a repo of International Grid Certificate Authorities
+* The certificate tar file can be downloaded from https://software.xsede.org/security/xsede-certs.tar.gz
+* Once the certificates are downloaded locally, the airavata-myproxy-client.properties has to be configured. 
+
+Running Tests
+=============
+To run tests use maven as follows;
+> mvn clean install -Dmyproxy.user=<MY PROXY USER NAME> -Dmyproxy.password=<MY PROXY PASSWORD>
+
+Further to run SecurityContextTest.testRenewCredentials(), you need to register current host as a trusted renewer.
+For that execute following command;
+> myproxy-logon -t 264 -s <MY PROXY SERVER> -l <MY PROXY USER NAME>
+> myproxy-init -A --cert /tmp/x509up_u501 --key /tmp/x509up_u501 -l <MY PROXY USER NAME> -s <MY PROXY SERVER>
+
+Ignore modules bes-client and jsdl-generator. These modules are not present in the root pom file also.

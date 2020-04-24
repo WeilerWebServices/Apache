@@ -1,0 +1,9 @@
+**/target
+.idea
+**/*.iml
+**/lib
+.project
+.settings/
+.classpath
+wikipedia.xml
+ejb-jar.xml

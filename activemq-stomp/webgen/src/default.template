@@ -1,0 +1,133 @@
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE- 2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+    <LINK href="http://activemq.apache.org/styles/site.css" rel="stylesheet" type="text/css">
+    <LINK href="http://activemq.apache.org/styles/type-settings.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="default.css" />
+    <SCRIPT src="http://activemq.apache.org/styles/prototype.js" type="text/javascript"></SCRIPT>
+    <SCRIPT src="http://activemq.apache.org/styles/rico.js" type="text/javascript"></SCRIPT>
+    <SCRIPT src="http://activemq.apache.org/styles/site.js" type="text/javascript"></SCRIPT>
+
+    <SCRIPT src="http://www.google-analytics.com/urchin.js" type="text/javascript"></SCRIPT>
+    <SCRIPT type="text/javascript">uacct = "UA-1347593-1";urchinTracker();</SCRIPT>
+    <STYLE type="text/css">
+      .maincontent { overflow:hidden; }
+    </STYLE>
+    <!--[if IE]>
+    <style type="text/css">
+      .maincontent { width:100%; }
+    </style>
+    <![endif]-->
+
+    <TITLE>
+    {title:}
+    </TITLE>
+<META http-equiv="Content-Type" content="text/html;charset=UTF-8"></HEAD>
+<BODY>
+
+<DIV class="white_box">
+<DIV class="header">
+  <DIV class="header_l">
+    <DIV class="header_r">
+    </DIV>
+  </DIV>
+</DIV>
+<DIV class="content">
+  <DIV class="content_l">
+    <DIV class="content_r">
+      <DIV>
+
+<!-- Banner -->
+                                                                                                                                                                                                            <DIV id="asf_logo">
+	<DIV id="activemq_logo">
+            <A style="float:left; width:280px;display:block;text-indent:-5000px;text-decoration:none;line-height:60px; margin-top:10px; margin-left:100px;" href="">ActiveMQ</A>
+            <A style="float:right; width:210px;display:block;text-indent:-5000px;text-decoration:none;line-height:60px; margin-top:15px; margin-right:10px;" href="http://www.apache.org/">ASF</A>
+	</DIV>
+        </DIV>
+                                                                                                                                                
+        <DIV class="top_red_bar">
+
+          <DIV id="site-breadcrumbs">
+			{breadcrumb_trail:}
+          </DIV>
+          <DIV id="site-quicklinks">
+                                                                                                                                                                                                                                    <P><A href="http://activemq.apache.org/discussion-forums.html" rel="nofollow">Forums</A> &#124; <A href="http://activemq.apache.org/support.html" rel="nofollow">Support</A></P>
+          </DIV>
+        </DIV>
+
+	<TABLE border="0">
+	<TBODY>
+        <TR>
+        <TD valign="top" width="100%">
+          <DIV class="wiki-content maincontent">
+            <webgen:block name="content" />
+          </DIV>
+        </TD>
+        <TD valign="top">
+          <DIV class="navigation">
+            <DIV class="navigation_top">
+              <DIV class="navigation_bottom">
+	      {menu: {max_levels: 2, min_levels: 2, used_nodes: files}}
+<!--				<H3>
+					<A name="Navigation-Overview"></A><A href="overview.html" title="Overview">Overview</A></H3>
+					<UL class="alternate" type="square">
+					<LI><A href="" title="Index">Home</A></LI>
+					<LI><A href="faq.html" title="FAQ">FAQ</A></LI>
+					<LI><A href="download.html" title="Download">Download</A></LI>
+					</UL>
+					
+				<H3>
+					<A name="Navigation-Overview"></A><A href="/stomp10/index.html" title="Overview">Stomp 1.0</A></H3>
+					<UL class="alternate" type="square">
+					<LI><A href="/stomp10/specification.html" title="Specification">Specification</A></LI>
+					<LI><A href="/stomp10/additional.html" title="Additional Information">Additional Information</A></LI>
+					</UL>
+ -->									                                                                                                                                                                                                                                                                                                                  </DIV>
+            </DIV>
+          </DIV>
+        </TD>
+        </TR>
+	</TBODY>
+        </TABLE>
+
+
+        <DIV class="bottom_red_bar"></DIV>
+      </DIV>
+    </DIV>
+  </DIV>
+</DIV>
+<DIV class="black_box">
+<DIV class="footer">
+  <DIV class="footer_l">
+    <DIV class="footer_r">
+
+      <DIV>
+        &copy; 2004-2008 The Apache Software Foundation.
+        - <A href="http://activemq.apache.org/privacy-policy.html">Privacy Policy</A>
+      </DIV>
+    </DIV>
+  </DIV>
+</DIV>
+</DIV>
+
+</DIV>
+<DIV class="design_attribution"><A href="http://hiramchirino.com/">Graphic Design By Hiram</A></DIV>
+</BODY>
+</HTML>

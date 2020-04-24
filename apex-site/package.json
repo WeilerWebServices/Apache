@@ -1,0 +1,39 @@
+{
+  "name": "apex-site",
+  "version": "1.0.0",
+  "description": "The public website for the Apache Apex Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-wip-us.apache.org/repos/asf/apex-site.git"
+  },
+  "keywords": [
+    "apache",
+    "software",
+    "foundation",
+    "apex",
+    "website"
+  ],
+  "author": "Andy Perlitch <andy@datatorrent.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "async": "^1.5.0",
+    "bower": "^1.5.2",
+    "dateformat": "^1.0.12",
+    "gulp": "^3.9.0",
+    "gulp-compile-handlebars": "^0.5.0",
+    "gulp-less": "^3.0.3",
+    "gulp-marked": "^1.0.0",
+    "handlebars": "^4.0.2",
+    "highlight.js": "^8.9.1",
+    "javascript-natural-sort": "^0.7.1",
+    "jsdom": "3.1.2",
+    "lodash": "^3.10.1",
+    "q": "^1.5.0",
+    "request": "^2.65.0",
+    "semver": "^5.1.0"
+  }
+}

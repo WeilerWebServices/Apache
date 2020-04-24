@@ -1,0 +1,15 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r requirements-dev.txt
+script:
+  - cp django_airavata/settings_local.py.sample django_airavata/settings_local.py
+  - python manage.py migrate
+  - python manage.py check
+  - python manage.py test
+  # For now ignore long line endings
+  - flake8 --ignore=E501 .
+  - ./lint_js.sh
+  - ./build_js.sh
+  - ./test_js.sh

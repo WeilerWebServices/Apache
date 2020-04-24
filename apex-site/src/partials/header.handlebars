@@ -1,0 +1,83 @@
+<html lang="en"><head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Apex is an enterprise grade native YARN big data-in-motion platform that unifies stream processing as well as batch processing.">
+    <meta name="author" content="Apache Software Foundation">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Apache Apex</title>
+
+    <!-- Main Stylesheet -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-85540278-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-static-top" id="main-nav">
+      <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img src="images/apex-logo.svg" class="logo" alt="Apache Apex Logo">
+          Apache Apex<span class="trademark">&trade;</span>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-right navbar-nav">
+          {{#each nav}}
+          {{#if items}}
+
+            {{#if href}}
+            <li class="nav-item nav-mouseover">
+              <ul class="dropdown-menu">
+                {{#each items}}
+                {{#if href}}
+                <li class="{{classes}}"><a href="{{href}}">{{label}}</a></li>
+                {{else}}
+                <li class="{{classes}}"><strong>{{label}}</strong></li>
+                {{/if}}
+                {{/each}}
+              </ul>
+              <a href="{{href}}" class="nav-link">{{label}}</a>
+            </li>
+            {{else}}
+            <li class="nav-item">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link">{{label}}<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                {{#each items}}
+                <li><a href="{{href}}">{{label}}</a></li>
+                {{/each}}
+              </ul>
+            </li>
+            {{/if}}
+          
+          {{else}}
+          <li class="nav-item">
+            <a class="nav-link {{classes}}" href="{{href}}">{{label}}</a>
+          </li>
+          {{/if}}
+          {{/each}}
+        </ul>
+        
+      </div>
+    </nav>

@@ -1,0 +1,75 @@
+#main-nav {
+  background-color: @brand-primary;
+  margin-bottom: 0;
+  border: none;
+  .nav-link {
+    color: white;
+    cursor: pointer;
+    &:hover {
+      background: lighten(@brand-primary, 25%);
+    }
+    &.btn {
+      padding-bottom: 7px;
+      padding-top: 7px;
+      margin-top: 8px;
+      margin-left: 5px;
+      margin-right: 5px;
+      &.btn-success {
+        &:hover {
+          background-color: darken(@brand-success, 10%);
+        }
+      }
+    }
+  }
+  .navbar-brand {
+    font-family: @headings-font-family;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    small {
+      font-weight: normal;
+      color: rgba(255,255,255,0.5);
+    }
+    .logo {
+      height: 1em;
+      float: left;
+      margin-right: 5px;
+    }
+  }
+  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    color: @gray;
+  }
+
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #EFEFEF;
+  }
+  .navbar-nav .open .dropdown-menu {
+    background-color: lighten(@brand-primary, 10%);
+  }
+}
+.navbar-toggle {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-mouseover:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-mouseover .dropdown-menu:hover + a {
+  background-color: #e7e7e7; 
+  color: #555;
+}
+
+.dropdown-menu {
+  left: 0 !important;
+  right: auto !important;
+}
+
+.dropdown-header {
+  margin: 10px 0 0 20px;
+  padding: 5px 0 0;
+  border-top: 1px solid #dad9d6;
+  font-size: 14px;
+}

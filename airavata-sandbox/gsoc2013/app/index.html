@@ -1,0 +1,138 @@
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<!doctype html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Apache Airavata WebUI</title>
+    <title>Execution Interface, Apache Airavata</title>
+    <meta name="description" content="WebUI for Apache Airavata">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- build:css({.tmp,app}) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="WebUI">
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+<![endif]-->
+
+<!-- The Navbar -->
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".mainnavbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Apache Airavata WebUI</a>
+  </div>
+
+  <!-- The Meat -->
+  <div class="collapse navbar-collapse mainnavbar" ui-view="navbar"></div>
+</nav>
+
+  <!-- The Content -->
+  <div class="container" style="padding-top: 60px;">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well sidebar-nav">
+          <div class="container" ui-view="sidenavbar"></div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <!-- Alerts -->
+        <div class="row" ng-controller="Alert">
+          <div ng-repeat="alert in alerts" class="alert alert-block alert-{{alert.type}} fade in">
+            <button type="button" class="close" data-dismiss="alert" ng-click="closeAlert($index)">&times;</button>
+            <h4 class="alert-heading">{{alert.head}}</h4>
+            <p>{{alert.msg}}</p>
+          </div>
+        </div>
+        <!-- Canvas -->
+        <div class="row" ui-view="canvas"></div>
+      </div>
+    </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  <script>window.angular || document.write('<script src="bower_components/angular/angular.js"><\/script>')</script>
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/Alert.js"></script>
+  <script src="scripts/controllers/RegistryConnection.js"></script>
+  <script src="scripts/controllers/WorkflowCreator.js"></script>
+  <script src="scripts/registryAPI.js"></script>
+  <script src="scripts/controllers/WorkflowLaunch.js"></script>
+  <script src="scripts/controllers/HostDescriptor.js"></script>
+  <script src="scripts/controllers/ApplicationDescriptor.js"></script>
+  <script src="scripts/controllers/FileTransfer.js"></script>
+  <script src="scripts/controllers/WorkflowMonitoring.js"></script>
+  <script src="scripts/NodeSubscriber.js"></script>
+  <script src="scripts/workflowAPI.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+  <script src="scripts/vendor/jquery.base64.min.js"></script>
+  <script src="bower_components/raphael/raphael.js"></script>
+  <script src="scripts/vendor/bandit.js"></script>
+  <script src="bower_components/bootstrap-sass/js/affix.js"></script>
+  <script src="bower_components/bootstrap-sass/js/alert.js"></script>
+  <script src="bower_components/bootstrap-sass/js/dropdown.js"></script>
+  <script src="bower_components/bootstrap-sass/js/tooltip.js"></script>
+  <script src="bower_components/bootstrap-sass/js/modal.js"></script>
+  <script src="bower_components/bootstrap-sass/js/transition.js"></script>
+  <script src="bower_components/bootstrap-sass/js/button.js"></script>
+  <script src="bower_components/bootstrap-sass/js/popover.js"></script>
+  <script src="bower_components/bootstrap-sass/js/typeahead.js"></script>
+  <script src="bower_components/bootstrap-sass/js/carousel.js"></script>
+  <script src="bower_components/bootstrap-sass/js/scrollspy.js"></script>
+  <script src="bower_components/bootstrap-sass/js/collapse.js"></script>
+  <script src="bower_components/bootstrap-sass/js/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/modules.js -->
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/tv4/tv4.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

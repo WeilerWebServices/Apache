@@ -1,0 +1,20 @@
+[
+  { "id": "index", "label": "Home", "href": "/" },
+  { "id": "docs", "label": "Documentation", "href": "/docs.html" },
+  { "id": "Powered by Apex", "label": "Powered By Apex", "href": "/powered-by-apex.html" },
+  { "id": "roadmap", "label": "Roadmap", "href": "/roadmap.html" },
+  { "id": "community", "label": "Community", "href": "/community.html", "items": [
+    { "label": "Mailing Lists", "href": "/community.html#mailing-lists" },
+    { "label": "Issue Tracking", "href": "/community.html#issue-tracking" },
+    { "label": "Stack Overflow", "href": "http://stackoverflow.com/questions/tagged/apache-apex"},
+    { "label": "Events", "href": "/community.html#events" },
+    { "label": "Contributing", "href": "/community.html#contributing"},
+    { "label": "Apache Foundation", "href": "http://www.apache.org/foundation/how-it-works.html" }
+  ]},
+  { "id": "source", "label": "Github", "href": "https://github.com/apache/apex-core", "items": [
+    { "label": "Apex Core", "href": "https://github.com/apache/apex-core" },
+    { "label": "Apex Malhar", "href": "https://github.com/apache/apex-malhar" },
+    { "label": "Apex Site", "href": "https://github.com/apache/apex-site" }
+  ] },
+  { "id": "download", "label": "Download", "href": "/downloads.html", "classes": "btn btn-success btn-download" }
+]

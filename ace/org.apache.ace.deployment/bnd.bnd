@@ -1,0 +1,26 @@
+# Licensed to the Apache Software Foundation (ASF) under the terms of ASLv2 (http://www.apache.org/licenses/LICENSE-2.0).
+
+-buildpath: \
+	${^-buildpath},\
+	${testng},\
+	osgi.core;version=6.0.0,\
+	osgi.cmpn,\
+	org.apache.felix.http.api,\
+	org.apache.felix.http.servlet-api,\
+	org.apache.felix.dependencymanager,\
+	com.vaadin,\
+	biz.aQute.repository,\
+	biz.aQute.bnd,\
+	org.apache.ace.authentication.api;version=latest,\
+	org.apache.ace.bnd.registry;version=latest,\
+	org.apache.ace.bnd.repository;version=latest,\
+	org.apache.ace.identification.api;version=latest,\
+	org.apache.ace.discovery.api;version=latest,\
+	org.apache.ace.connectionfactory;version=latest,\
+	org.apache.ace.repository.api;version=latest,\
+	org.apache.ace.repository.ext;version=latest,\
+	org.apache.ace.test;version=latest,\
+	org.apache.ace.range.api;version=latest,\
+	org.apache.ace.http.api;version=latest,\
+	org.easymock
+-sub: *.bnd

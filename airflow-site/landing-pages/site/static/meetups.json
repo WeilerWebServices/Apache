@@ -1,0 +1,79 @@
+[
+  {
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "date": "",
+    "members": 355,
+    "url": "https://www.meetup.com/Amsterdam-Airflow-meetup/"
+  },
+  {
+    "city": "San Francisco",
+    "country": "USA",
+    "date": "",
+    "members": 1797,
+    "url": "https://www.meetup.com/Bay-Area-Apache-Airflow-Incubating-Meetup/"
+  },
+  {
+    "city": "London",
+    "country": "United Kingdom",
+    "date": "",
+    "members": 672,
+    "url": "https://www.meetup.com/London-Apache-Airflow-Meetup/"
+  },
+  {
+    "city": "New York",
+    "country": "USA",
+    "date": "",
+    "members": 751,
+    "url": "https://www.meetup.com/NYC-Apache-Airflow-Meetup/"
+  },
+  {
+    "city": "Melbourne",
+    "country": "Australia",
+    "date": "",
+    "members": 140,
+    "url": "https://www.meetup.com/Melbourne-Apache-Airflow-Meetup/"
+  },
+  {
+    "city": "Paris",
+    "country": "France",
+    "date": "",
+    "members": 565,
+    "url": "https://www.meetup.com/Paris-Apache-Airflow-Meetup/"
+  },
+  {
+    "city": "Portland",
+    "country": "USA",
+    "date": "",
+    "members": 74,
+    "url": "https://www.meetup.com/Portland-Apache-Airflow-Meetup/"
+  },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "date": "",
+    "members": 116,
+    "url": "https://www.meetup.com/Tokyo-Apache-Airflow-incubating-Meetup/"
+  },
+  {
+    "city": "Bangalore",
+    "country": "India",
+    "date": "",
+    "members": 564,
+    "url": "https://www.meetup.com/Bangalore-Apache-Airflow-Meetup/"
+  },
+  {
+    "city": "Seattle",
+    "country": "USA",
+    "date": "",
+    "members": 179,
+    "url": "https://www.meetup.com/Seattle-Apache-Airflow-Users-Group/"
+  },
+  {
+    "city": "Warsaw",
+    "country": "Poland",
+    "date": "",
+    "members": 359,
+    "url": "https://www.meetup.com/Warsaw-Airflow-Meetup/"
+  }
+]

@@ -1,0 +1,44 @@
+# Licensed to the Apache Software Foundation (ASF) under the terms of ASLv2 (http://www.apache.org/licenses/LICENSE-2.0).
+
+Private-Package: \
+	javax.xml.namespace,\
+	org.xmlpull.mxp1,\
+	org.xmlpull.mxp1_serializer,\
+	org.xmlpull.v1,\
+	org.xmlpull.v1.builder,\
+	org.xmlpull.v1.builder.adapter,\
+	org.xmlpull.v1.builder.impl,\
+	org.xmlpull.v1.dom2_builder,\
+	org.xmlpull.v1.parser_pool,\
+	org.xmlpull.v1.sax2,\
+	org.xmlpull.v1.util,\
+	org.xmlpull.v1.wrapper,\
+	org.xmlpull.v1.wrapper.classic,\
+	org.apache.velocity.*,\
+	org.apache.commons.lang.*,\
+	org.apache.commons.collections.*
+Export-Package: org.apache.ace.client.repository.helper.base
+Import-Package: !javax.servlet,\
+	!javax.servlet.http,\
+	!com.werken.xpath,\
+	!javax.naming,\
+	!javax.sql,\
+	!javax.xml.parsers,\
+	!org.apache.log,\
+	!org.apache.log.format,\
+	!org.apache.log.output.io,\
+	!org.apache.log4j,\
+	!org.apache.tools.ant,\
+	!org.apache.tools.ant.taskdefs,\
+	!org.jdom,\
+	!org.jdom.input,\
+	!org.jdom.output,\
+	!org.w3c.dom,\
+	!org.xml.sax,\
+	!org.xml.sax.helpers,\
+	!org.apache.commons.logging,\
+	!org.apache.oro.text.perl,\
+	*
+Bundle-Version: 1.0.3
+Bundle-Name: Apache ACE Client Repository Helper Base
+Bundle-Description: Provides the base implementation for Apache ACE repository helpers

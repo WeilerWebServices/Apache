@@ -1,0 +1,11 @@
+<IfModule mod_alias.c>
+    ScriptAlias /cgi-bin/ "@ServerRoot@/cgi-bin/"
+</IfModule>
+
+
+
+<Directory "@ServerRoot@/cgi-bin">
+   AllowOverride None
+   Options None
+</Directory>
+

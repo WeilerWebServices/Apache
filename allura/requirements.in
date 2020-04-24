@@ -1,0 +1,63 @@
+ActivityStream==0.3.0
+beautifulsoup4
+Beaker
+backlash==0.1.4
+chardet
+colander==1.7.0
+cryptography==2.6.1
+decorator
+EasyWidgets>=0.3.3
+emoji
+faulthandler ; python_version < "3.3"
+feedgenerator
+feedparser
+# FormEncode may need v2.0 to work past py3.3 or so?  https://github.com/formencode/formencode/issues/140
+FormEncode
+GitPython==2.1.11
+html5lib==1.0.1
+Jinja2
+Markdown<3
+markdown-checklist==0.4.1
+MarkupSafe
+Ming==0.5.7
+# oauth2 doesn't have py3.6 support.  There's a fork with fixes but no pypi releases I can find.  https://github.com/joestump/python-oauth2/issues/223
+oauth2
+paginate
+Paste
+PasteDeploy
+PasteScript
+Pillow
+# profanity filter for feedback
+profanityfilter==2.0.6
+Pygments
+pymongo==2.8.1
+Pypeline[creole,markdown,textile,rst]
+pysolr==3.6.0
+python-dateutil
+python-magic
+python-oembed
+pytz==2019.1
+qrcode
+requests
+requests-oauthlib
+# for taskd proc name switching
+setproctitle==1.1.9
+six==1.12.0
+TimerMiddleware==0.5.1
+TurboGears2==2.3.12
+WebHelpers2
+WebOb==1.7.4
+wrapt==1.11.2
+
+# testing
+datadiff
+ipython<6  # Ipython 7 starts to require py3
+mock
+nose
+pyflakes
+#pylint -- disabled due to [#8346]  (also requires diff versions on py2 vs 3, including transitive deps which gets tricky with pip-compile)
+testfixtures
+WebTest==2.0.33
+
+# deployment
+gunicorn==19.5.0

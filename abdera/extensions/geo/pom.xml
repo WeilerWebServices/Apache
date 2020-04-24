@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.apache.abdera</groupId>
+    <artifactId>abdera</artifactId>
+    <version>1.2-SNAPSHOT</version>  
+    <relativePath>../..</relativePath>
+  </parent>  
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>abdera-extensions-geo</artifactId>
+  <packaging>bundle</packaging>
+  <name>Abdera Extensions - Geo</name>
+  <version>1.2-SNAPSHOT</version>  
+  <description>Atom Specification Extensions - Geo</description>
+
+  <properties>
+    <topDir>${basedir}/../..</topDir>
+    <abdera.osgi.default.exports>
+      org.apache.abdera.ext.geo.*
+    </abdera.osgi.default.exports>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.abdera</groupId>
+      <artifactId>abdera-client</artifactId>
+      <version>1.2-SNAPSHOT</version>  
+    </dependency>    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+  </dependencies>
+</project>

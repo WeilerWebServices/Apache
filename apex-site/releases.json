@@ -1,0 +1,34 @@
+{
+  "core": {
+    "src": [
+      {
+        "version": "3.7.0",
+        "docs": "3.7",
+        "repo": "apex-core",
+        "date": 1524836334000
+      },
+      {
+        "version": "3.6.0",
+        "docs": "3.6",
+        "repo": "apex-core",
+        "date": 1493965968000
+      }
+    ]
+  },
+  "malhar": {
+    "src": [
+      {
+        "version": "3.8.0",
+        "docs": "3.8",
+        "repo": "apex-malhar",
+        "date": 1510420542000
+      },
+      {
+        "version": "3.7.0",
+        "docs": "3.7",
+        "repo": "apex-malhar",
+        "date": 1491025960000
+      }
+    ]
+  }
+}

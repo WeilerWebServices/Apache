@@ -1,0 +1,2 @@
+Release instructions are in link:/doc/src/dev/release{outfilesuffix}[/doc/src/dev/release.adoc]
+

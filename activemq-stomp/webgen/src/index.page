@@ -1,0 +1,13 @@
+---
+title: Home
+routed_title: Stomp Protocol
+---
+## Stomp Protocol
+
+The Stomp project is the Streaming Text Orientated Messaging Protocol site (or the Protocol Briefly Known as TTMP and Represented by the symbol :ttmp).
+
+## Easy integration
+
+Stomp is a very simple and easy to implement protocol, coming from the HTTP school of design; the server side may be hard to implement well, but it is very easy to write a client to get yourself connected. For example you can use Telnet to login to any Stomp broker and interact with it!
+
+Many developers have told us that they have managed to write a Stomp client in a couple of hours to integrate their particular language, runtime or platform into the Stomp network.

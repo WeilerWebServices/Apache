@@ -1,0 +1,140 @@
+************************************************************************************************************
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+************************************************************************************************************
+
+This file contains the PGP and GPG keys of Apache Any23
+developers. Please don't use them for email unless you have
+to. Their main purpose is code signing.
+
+Users: pgp < KEYS
+       gpg --import KEYS
+
+Apache Any23 Developers:
+       (gpg --list-sigs <your name> \
+             && gpg --armor --export <your name>) >> this file.
+
+************************************ PLEASE NOTE **********************************************************
+
+        Use a command such as the following to clone the repos before making your changes:
+        git clone https://git-wip-us.apache.org/repos/asf/any23-committers.git
+
+************************************************************************************************************
+pub   1024D/19FEA27D 2010-03-24
+uid                  Simone Tripodi (simonetripodi) <simonetripodi@apache.org>
+sig 3        19FEA27D 2010-03-24  Simone Tripodi (simonetripodi) <simonetripodi@apache.org>
+sub   4096g/C002CC79 2010-03-24
+sig          19FEA27D 2010-03-24  Simone Tripodi (simonetripodi) <simonetripodi@apache.org>
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.11 (Darwin)
+
+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
+dcC0KEtNPufKywDTzA==
+=vtxx
+-----END PGP PUBLIC KEY BLOCK-----
+
+pub   4096R/48BAEBF6 2013-10-28
+uid                  Lewis John McGibbney (CODE SIGNING KEY) <lewismc@apache.org>
+sig 3        48BAEBF6 2013-10-28  Lewis John McGibbney (CODE SIGNING KEY) <lewismc@apache.org>
+sub   4096R/88149F13 2013-10-28
+sig          48BAEBF6 2013-10-28  Lewis John McGibbney (CODE SIGNING KEY) <lewismc@apache.org>
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+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
+U4mpCUPzJn0b//0ghg/s1QfpYW0sT6iCPWd1
+=Q6l+
+-----END PGP PUBLIC KEY BLOCK-----

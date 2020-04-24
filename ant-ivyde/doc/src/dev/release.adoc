@@ -1,0 +1,240 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+
+This documentation is defining every steps that needs to be accomplished when releasing Apache IvyDE.
+In this doc, the released version is denoted as $VERSION, so it HAS to be replaced in the command line argument accordingly. There is also some $LOGIN which is referencing your login on the Apache machines.
+
+== Prepare
+
+=== Jira
+
+First in link:https://issues.apache.org/jira/browse/IVYDE[Jira] make sure that no more issues are opened for the target release.
+
+=== Release notes
+
+Make sure the release notes and the announcement are up to date in doc/src/release-notes.adoc.
+
+=== Last checks
+
+Make sure that there is no missing ASL header in the source files. The build of IvyDE generate a report there: https://builds.apache.org/job/IvyDE/lastSuccessfulBuild/artifact/work/rat/report.txt
+
+Make sure the copyright year in the NOTICE file is the current year.
+
+Make sure the copyright year in the asciidoc template files is the current year; the 3 template files to check are:
+  - `doc/templates/book/document.html.slim`
+  - `doc/templates/articles/document.html.slim`
+  - `doc/templates/eclipse/document.html.slim`
+
+
+== Building for release
+
+Make sure you have a proper working copy with a `git status`. You should have no modification.
+
+Edit the `build.properties` and update the value of the `version.qualifier` property to an appropriate qualifier. For example, if you want to release the `Final` version of `2.3.0` then the `version.qualifier` value is expected to be `Final`. Similarly, if you are releasing `rc1` of `2.3.0` then the value for this property will be `rc1`
+
+Then launch the build:
+
+[source]
+----
+ant /release clean dist -DbaseLocation=/home/me/...../eclipse/
+----
+
+And sign the artifacts:
+
+[source]
+----
+./signArtifacts.sh
+----
+
+Then it is time to commit the changes and tag the release as soon as you are happy with your artifacts:
+
+[source]
+----
+git commit -m "Release $VERSION" ./
+git tag $VERSION -m "Tag IvyDE release $VERSION"
+----
+
+For example, for tagging the `2.3.0-rc1` release, use:
+
+[source]
+----
+git tag 2.3.0-rc1 -m "Tag IvyDE release 2.3.0-rc1"
+----
+
+
+== Prepare the updatesite
+
+The instructions to build the updatesite are in `doc/src/dev/updatesite.adoc`.
+
+== Vote for the released artifacts
+
+First the release needs to be publicly available.
+
+You can use the dev area of the dist subversion for that. Then just commit the artifacts into https://dist.apache.org/repos/dist/dev/ant/ivyde/$VERSION
+
+And launch the vote on the ant-dev mailing list:
+
+[source]
+----
+Subject: [VOTE] IvyDE $VERSION Release
+
+I have built a release candidate for Apache IvyDE $VERSION
+
+The tag is here: https://git1-us-west.apache.org/repos/asf?p=ant-ivyde.git;a=commit;h=refs/tags/$VERSION with the sha1 ${githash-of-tag}
+
+You can download the distribution from this URL: https://dist.apache.org/repos/dist/dev/ant/ivyde/$VERSION at revision ${svn-rev-of-the-commit}
+
+The Eclipse p2 repository is there: https://dist.apache.org/repos/dist/dev/ant/ivyde/updatesite/ivyde-$VERSION at revision ${svn-rev-of-the-commit}
+
+Do you vote for the release of these binaries?
+
+[ ] Yes
+[ ] No
+
+Regards,
+
+$ME, IvyDE $VERSION release manager
+----
+
+Note: this link:https://ant.apache.org/bylaws.html[page] is defining when and how a release can be accepted.
+
+== Deployment
+
+=== Publish the artifacts
+
+The binaries have to be pushed with their signatures and checksums in the apache dist. It is managed by svnpusub so it needs to be committed into the subversion https://dist.apache.org/repos/dist/release/ant/
+
+Then just do:
+
+[source]
+----
+$ svn mv https://dist.apache.org/repos/dist/dev/ant/ivyde/$VERSION https://dist.apache.org/repos/dist/release/ant/ivyde/$VERSION
+----
+
+In order to keep the main dist area of a reasonable size, old releases should be removed. They will disappear from the main dist but will still be available via the link:https://archive.apache.org/dist/ant/ivyde/[archive]. To do so, just use the `svn rm` command against the artifacts or folders to remove.
+
+=== Deploy the updatesite
+
+Follow the instructions of that link:updatesite{outfilesuffix}#deployment[page].
+
+== Announcement
+
+The announcement should have been already prepared and reviewed by other committers. Its content can be found in doc/release-notes.html.
+
+With that content, send a mail to announce@apache.org, ivy-user@ant.apache.org and dev@ant.apache.org with the title "[ANNOUNCE] Apache IvyDE $VERSION released", and with your apache email as sender (announce@ requires it).
+
+== Update the documentation
+
+=== Update the table of content
+
+The table of content needs to be updated so that the last documentation point to that new release.
+
+First we need to update the external links. In svn/site/ivyde/sources/history:
+
+[source]
+----
+svn pe svn:externals .
+----
+
+And:
+* update latest-milestone:
+[source]
+----
+latest-milestone https://svn.apache.org/repos/asf/ant/ivy/ivyde/branches/$VERSION/doc
+----
+
+* add an entry:
+[source]
+----
+$VERSION https://svn.apache.org/repos/asf/ant/ivy/ivyde/branches/$VERSION/doc
+----
+
+Then we need to edit svn/site/ivyde/sources/toc.json:
+
+* add the following data to the correct abstract node:
+[source]
+----
+            {
+                "title":"$VERSION",
+                "url":"https://ant.apache.org/ivy/ivyde/history/$VERSION/index.html"
+            }
+----
+
+* update the title of the latest-milestone history entry:
+
+[source]
+----
+            "title":"Documentation ($VERSION)"
+----
+
+Then svn update your working copy (to retrieve the new history branch).
+
+=== Update the download page
+
+In the page svn/site/ivyde/sources/download.html change every reference of the old version to the new one.
+
+=== Deploy
+
+All site editing being done, commit your changes.
+
+And now let's generate the site and deploy it:
+
+. generate the part of the site for the new version:
+[source]
+----
+ant generate-history -Dhistory.version=$VERSION
+----
+WARNING: that target is modifying the toc.json in the imported branch so that the generated html have a proper version declared in the toc. You should not commit that change. Once the site has been generated, you may want to revert the changes so you won't commit it by mistake. (TODO: process to improve so we shouldn't worry).
+
+. generate the website with the new toc:
+[source]
+----
+ant /all generate-site
+----
+
+. you should verify that the site generated in target is OK. And once your happy with it, commit the changes in target (some svn add might be needed !) +
+
+== Post release tasks
+
+=== Jira
+
+Update the link:https://issues.apache.org/jira/secure/project/ManageVersions.jspa?pid=12310640[IvyDE Jira project]: mark the version as released.
+
+=== Bump the version
+
+Update the versions needs to be updated in the following files:
+
+* build.properties (edit the qualifier)
+
+* $$*$$/META-INF/MANIFEST.MF
+
+* $$*$$/feature.xml
+
+=== Update the doap file
+
+Add the just released version in IvyDE's doap file: see doap_IvyDE.rdf at the root of the project.
+
+=== Clean up the release notes
+
+Edit the release notes in the documentation (doc/release-notes.html) so it can be prepared and maintained for the next release:
+
+* edit the content under "Release Announcement": edit the version it is talking about and clean it up so it is a summary of the release notes
+* edit the content under "Status of this release": update it with the goal of the next release, or a TODO if it has not yet been defined
+* edit the content under "Major Changes in this Release": wipe it all and put there something like "Nothing done yet"
+* edit the content under "List of Changes in this Release": remove the list of entries and update the version in "List of changes since Apache IvyDE X.X.X"

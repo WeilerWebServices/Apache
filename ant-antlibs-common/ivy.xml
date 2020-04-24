@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+ 
+  https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<project name="ivy" xmlns:ivy="antlib:org.apache.ivy.ant">
+  <description>Targets for ivy.xml creation/handling</description>
+
+  <dirname property="common.basedir" file="${ant.file.ivy}"/>
+  <import file="${common.basedir}/common-tasks.xml"/>
+
+  <!-- ========================================================== -->
+  <!-- init all the Ivy support   -->
+  <!-- ========================================================== -->
+  <target name="ivy-init"
+          depends="setup">
+    <property name="target.ivy.xml"
+              location="${build.lib}/${artifact.stub}-ivy.xml"/>
+
+    <!--look for a template Ivy file -->
+    <property name="project.ivy.xml" location="ivy.xml"/>
+    <available property="project.has-ivy.xml?" file="${project.ivy.xml}"/>
+    <condition property="generate-default-ivy.xml?">
+      <and>
+        <not>
+          <isset property="project.has-ivy.xml?"/>
+        </not>
+        <not>
+          <uptodate targetfile="${target.ivy.xml}">
+            <srcresources>
+              <file file="${common.basedir}/build.xml"/>
+              <file file="${common.basedir}/ivy.xml"/>
+              <file file="version.properties"/>
+              <file file="${target.jar}"/>
+            </srcresources>
+          </uptodate>
+        </not>
+      </and>
+    </condition>
+  </target>
+
+
+  <!-- ========================================================== -->
+  <!-- ivy.xml creation/copy, depending on whether it exists or not   -->
+  <!-- ========================================================== -->
+
+  <!--copy an existing template-->
+  <target name="copy-ivy.xml" depends="ivy-init" if="project.has-ivy.xml?">
+    <expandingcopy file="${project.ivy.xml}" tofile="${target.ivy.xml}"/>
+  </target>
+
+
+  <!-- inline creation of a zero dependency ivy.xml.
+    We don't even declare a dependency on ant!
+  -->
+  <target name="make-ivy.xml" depends="ivy-init" if="generate-default-ivy.xml?">
+    <echo message="Creating ivy.xml ${target.ivy.xml}" level="verbose"/>
+    <echo file="${target.ivy.xml}"><![CDATA[
+      <ivy-module version="2.0">
+        <info organisation="org.apache.ant"
+              module="${artifact.name}"
+              revision="${artifact.version}"
+              publication="${artifact.publication.datetime}">
+          <license name="Apache Software License 2.0"
+                   url="https://www.apache.org/licenses/LICENSE-2.0"/>
+          <ivyauthor name="Apache Ant Development Team"
+                     url="https://ant.apache.org/"/>
+        </info>
+        <publications xmlns:e="urn:ant.apache.org:ivy-extras">
+          <artifact name="${artifact.name}" type="pom" ext="pom"/>
+          <artifact name="${artifact.name}" type="pom.asc" ext="pom.asc"/>
+          <artifact name="${artifact.name}" type="jar" ext="jar"/>
+          <artifact name="${artifact.name}" type="jar.asc" ext="jar.asc"/>
+          <artifact name="${artifact.name}" type="source" ext="jar"
+                    e:classifier="sources"/>
+          <artifact name="${artifact.name}" type="source.asc" ext="jar.asc"
+                    e:classifier="sources"/>
+          <artifact name="${artifact.name}" type="javadoc" ext="jar"
+                    e:classifier="javadoc"/>
+          <artifact name="${artifact.name}" type="javadoc.asc" ext="jar.asc"
+                    e:classifier="javadoc"/>
+          <artifact name="${artifact.name}" type="ivy" ext="xml"
+                    e:classifier="ivy"/>
+          <artifact name="${artifact.name}" type="ivy.asc" ext="xml.asc"
+                    e:classifier="ivy"/>
+        </publications>
+      </ivy-module>
+ ]]></echo>
+  </target>
+
+  <target name="ivy.xml" depends="copy-ivy.xml,make-ivy.xml">
+    <checksums>
+      <file file="${target.ivy.xml}"/>
+    </checksums>
+  </target>
+ 
+
+  <!-- ========================================================== -->
+  <!-- Bootstraping Ivy as in https://ant.apache.org/ivy/history/latest-milestone/samples/build.xml -->
+  <!-- ========================================================== -->
+
+  
+  <target name="download-ivy" if="with.ivy" depends="setup-properties">
+    <mkdir dir="${ivy.jar.dir}"/>
+    <!-- download Ivy from web site so that it can be used even without any special installation -->
+    <echo message="installing ivy..."/>
+    <get src="https://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.install.version}/ivy-${ivy.install.version}.jar" dest="${ivy.jar.file}" usetimestamp="true"/>
+  </target>
+  
+  <!-- ================================= 
+    target: install-ivy         
+    this target is not necessary if you put ivy.jar in your ant lib directory
+    if you already have ivy in your ant lib, you can simply remove this
+    target and the dependency the 'go' target has on it
+  ================================= -->
+  <target name="install-ivy" if="with.ivy" depends="download-ivy" description="--> install ivy">
+    <!-- try to load ivy here from local ivy dir, in case the user has not already dropped
+    it into ant's lib dir (note that the latter copy will always take precedence).
+    We will not fail as long as local lib dir exists (it may be empty) and
+    ivy is in at least one of ant's lib dir or the local lib dir. -->
+    <path id="ivy.lib.path">
+      <fileset dir="${ivy.jar.dir}" includes="*.jar"/>
+    </path>
+    <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+  </target>
+  
+
+  <!-- ========================================================== -->
+  <!-- Standard Ivy targets   -->
+  <!-- ========================================================== -->
+
+  <target name="resolve" depends="install-ivy,-no-resolve" if="with.ivy" unless="no.resolve">
+    <ivy:resolve file="ivy.xml"/>    
+    <ivy:retrieve conf="default" pattern="${lib.dir.compile}/[artifact].[ext]" sync="yes"/>
+    <ivy:retrieve conf="test" pattern="${lib.dir.test}/[artifact].[ext]" sync="yes"/>
+    <ivy:cachepath pathid="classpath.compile" conf="default"/>
+    <ivy:cachepath pathid="classpath.test" conf="default,test"/>
+  </target>
+  
+  <target name="-no-resolve" unless="with.ivy">
+    <path id="classpath.compile"/>
+    <path id="classpath.test"/>
+  </target>
+
+    
+
+</project>
+ 

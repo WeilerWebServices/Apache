@@ -1,0 +1,11 @@
+# Licensed to the Apache Software Foundation (ASF) under the terms of ASLv2 (http://www.apache.org/licenses/LICENSE-2.0).
+
+-buildpath: \
+	${^-buildpath},\
+	osgi.core;version=6.0.0,\
+	osgi.cmpn,\
+	org.apache.felix.dependencymanager,\
+	org.apache.felix.http.api,\
+	org.apache.felix.http.servlet-api,\
+	org.apache.ace.authentication.api;version=latest
+-sub: *.bnd

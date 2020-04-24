@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project name="antunit-base"
+         xmlns:cond="antlib:org.apache.tools.ant.types.conditions"
+         xmlns:cmp="antlib:org.apache.ant.compress"
+         xmlns:au="antlib:org.apache.ant.antunit">
+
+  <property name="input" location="${java.io.tmpdir}/testinput"/>
+  <property name="output" location="${java.io.tmpdir}/testoutput"/>
+
+  <target name="tearDown">
+    <delete dir="${input}"/>
+    <delete dir="${output}"/>
+  </target>
+
+  <target name="antunit">
+    <antunit xmlns="antlib:org.apache.ant.antunit">
+      <plainlistener />
+      <file file="${ant.file}" xmlns="antlib:org.apache.tools.ant" />
+    </antunit>
+  </target>
+
+  <!-- should go into AntUnit -->
+  <macrodef name="assertResourceExists">
+    <element name="resource" implicit="true"/>
+    <sequential>
+      <au:assertTrue>
+        <cond:resourceexists>
+          <resource/>
+        </cond:resourceexists>
+      </au:assertTrue>
+    </sequential>
+  </macrodef>
+  <macrodef name="assertResourceDoesntExist">
+    <element name="resource" implicit="true"/>
+    <sequential>
+      <au:assertFalse>
+        <cond:resourceexists>
+          <resource/>
+        </cond:resourceexists>
+      </au:assertFalse>
+    </sequential>
+  </macrodef>
+
+  <target name="-detect-zip-usage-of-extra-field">
+    <!-- startig with a patch release of Java8
+         java.util.zip.ZipEntry#getTime has started to use extended
+         timestamp extra fields contained within ZIP archives, which
+         leads to the timestamps contained within our tests to depend
+         onthe local timezone and the version of Java.
+         This target tries to detect whether the newer version is used
+         (in which case the pattern including the timezone is
+         required).
+         The change in OpenJDK is
+         https://hg.openjdk.java.net/jdk8u/jdk8u/jdk/rev/90df6756406f
+         -->
+    <condition property="zip-uses-extra-field">
+      <cond:islastmodified datetime="2001-11-19-15:34:20 +0100"
+                           pattern="yyyy-MM-dd-HH:mm:ss Z">
+        <cmp:zipentry name="asf-logo.gif">
+          <file file="../resources/asf-logo.gif.zip"/>
+        </cmp:zipentry>
+      </cond:islastmodified>
+    </condition>
+  </target>
+  <target name="-zip-with-extra-field"
+          depends="-detect-zip-usage-of-extra-field"
+          if="zip-uses-extra-field">
+    <property name="zip-ts-pattern" value="yyyy-MM-dd-HH:mm:ss Z"/>
+    <property name="zip-ts-value" value="2001-11-19-15:34:20 +0100"/>
+  </target>
+  <target name="-zip-without-extra-field"
+          depends="-detect-zip-usage-of-extra-field"
+          unless="zip-uses-extra-field">
+    <property name="zip-ts-pattern" value="yyyy-MM-dd-HH:mm:ss"/>
+    <property name="zip-ts-value" value="2001-11-19-15:34:20"/>
+  </target>
+  <target name="-set-zip-ts-properties"
+          depends="-zip-with-extra-field, -zip-without-extra-field"/>
+</project>

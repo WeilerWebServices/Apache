@@ -1,0 +1,134 @@
+Apache ACE
+Copyright 2011-2016 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+Licensed under the Apache License 2.0.
+
+This product includes software developed at The OSGi 
+Alliance (http://www.osgi.org/).
+Copyright: (c) OSGi Alliance (2000, 2010)
+Copyright (c) 2000 Gatespace AB. All Rights Reserved.
+Licensed under the Apache License 2.0.
+
+This product includes software developed at
+Mortbay (http://mortbay.org)
+Licensed under the Apache License 2.0.
+
+This product includes software developed at
+'Extreme! Lab, Indiana University' 
+(http://www.extreme.indiana.edu/)
+Copyright (c) all rights reserved
+Licensed under Apache Software License 1.1
+
+This product includes software developed at 
+Vaadin (http://vaadin.com)
+Copyright (c) 2011 Vaadin Ltd.
+Licensed under Apache License 2.0
+
+This product includes software developed at
+Google Inc. (http://www.google.com/)
+Copyright 2008-2011 Google Inc.
+Licensed under Apache License 2.0
+
+This product includes software developed at
+Testng (http://www.testng.org)
+Licensed under Apache License 2.0
+
+This product includes software developed at
+'GSON' (https://code.google.com/p/google-gson/).
+License under Apache License 2.0
+
+This product includes software developed at
+Oracle (http://www.oracle.com/)
+Copyright (c) 2010 Oracle and/or its affiliates.
+License under CDDL 1.0 License
+
+This product includes software developed at
+'Stefan Haustein, Oberhausen, Rhld., Germany' 
+Copyright (c) 2002-2007 Stefan Haustein, Oberhausen, Rhld., Germany
+(http://kxml.sourceforge.net/)
+Licensed under BSD License
+
+This product includes software developed at
+Hamcrest (http://www.hamcrest.org)
+Copyright (c) 2000-2006, www.hamcrest.org
+Licensed under BSD License
+
+This product includes software developed at
+SLF4J (https://slf4j.org/).
+Licensed under MIT License
+
+This product includes software developed at
+Mockito (http://www.hamcrest.org)
+Copyright (c) 2007 Mockito contributors
+Licensed under MIT License
+
+This product includes software developed at
+The Legion Of The Bouncy Castle
+(http://www.bouncycastle.org)
+Copyright (C) 2013 Legion of the Bouncy Castle Inc.
+Licensed under Bouncy Castle License
+
+This product includes software developed at
+XStream (http://xstream.codehaus.org)
+Copyright (c) 2003-2006, Joe Walnes
+Copyright (c) 2006-2007, XStream Committers
+License under Xstream License
+
+
+=========================================================================
+==  Apache Commons Codec (v1.4)                                        ==
+=========================================================================
+
+src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java contains 
+test data from http://aspell.sourceforge.net/test/batch0.tab.
+
+Copyright (C) 2002 Kevin Atkinson (kevina@gnu.org). Verbatim copying
+and distribution of this entire article is permitted in any medium,
+provided this notice is preserved.
+
+
+=========================================================================
+==  Apache Commons Codec (v1.4)                                        ==
+=========================================================================
+
+src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java contains 
+test data from http://aspell.sourceforge.net/test/batch0.tab.
+
+Copyright (C) 2002 Kevin Atkinson (kevina@gnu.org). Verbatim copying
+and distribution of this entire article is permitted in any medium,
+provided this notice is preserved.
+
+
+=========================================================================
+==  EasyMock (v3.1.0)                                                  ==
+=========================================================================
+
+EasyMock
+Copyright 2001-2011 OFFIS, Tammo Freese, Henri Tremblay
+
+This product includes/uses software(s) developed by 'an unknown organization'
+  - Code Generation Library (http://cglib.sourceforge.net/)
+
+This product includes/uses software(s) developed by 'Joe Walnes, Henri Tremblay, Leonardo Mesquita'
+  - Objenesis (http://objenesis.googlecode.com/svn/docs/index.html)
+  
+  Copyright 2009-2012 jclouds, Inc.
+
+
+=========================================================================
+==  Mockito (v1.5.0)                                                   ==
+=========================================================================
+
+Libraries used:
+
+Cglib - Apache License 2.0
+ASM - BSD license
+
+Mockito all distribution:
+
+Objenesis - MIT license
+Hamcrest - BSD license
+
+  

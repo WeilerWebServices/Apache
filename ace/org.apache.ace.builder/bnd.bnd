@@ -1,0 +1,11 @@
+# Licensed to the Apache Software Foundation (ASF) under the terms of ASLv2 (http://www.apache.org/licenses/LICENSE-2.0).
+
+-buildpath: \
+	${^-buildpath},\
+	${testng},\
+	org.apache.ace.test;version=latest
+
+Export-Package: org.apache.ace.builder
+Bundle-Version: 2.0.2
+Bundle-Name: Apache ACE Builder
+Bundle-Description: Implementation of the Apace ACE DeploymentPackage builder

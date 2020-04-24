@@ -1,0 +1,31 @@
+description:
+  This skeleton of a webgen website provides a set of default files for every
+  created webgen website.
+
+  When using the standard settings, the sources are in the directory `src` and
+  the generated output goes into `out`. Extensions can be placed under `ext`.
+
+  For configuration purposes, use the config.yaml file.
+---
+Generating the site:
+
+    webgen
+    open out/index.html
+
+Auto mode:
+
+    rake auto
+    
+will run webgen in auto mode where it will auto-detect changes in the source files and 
+regenerate the site automatically for you.
+
+
+Cleaning up:
+
+    rake clobber
+
+Uploading the site:
+
+    rake upload
+	
+Note: you should be sure that you have SSH_USER environment variable set.

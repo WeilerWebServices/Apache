@@ -1,0 +1,125 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     https://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+
+. link:#announcement[Release Announcement]
+. link:#what[What is Apache IvyDE?]
+. link:#majorchanges[Major Changes in this Release]
+. link:#changes[List of Changes in this Release]
+. link:#contrib[Committers and Contributors for this Release]
+
+== [[announcement]]Release Announcement
+
+The Apache IvyDE project is pleased to announce its 2.3.0-rc1 release.
+
+The Apache IvyDE Eclipse plugin integrates Apache Ivy's dependency management into Eclipse. It lets you manage your dependencies declared in an `ivy.xml` file in your Java Eclipse projects, or any other kind of project which needs dependency management. Apache IvyDE will contribute to the classpath of your Java project or you can make it retrieve your dependencies directly into your project. Last but not least Apache IvyDE offer editors of `ivy.xml` and `ivysettings.xml` files with completion. Get some preview here: https://ant.apache.org/ivy/ivyde/screenshots.html
+
+== [[what]]What is Apache IvyDE?
+
+Apache IvyDE is the Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse(TM).
+
+Apache IvyDE lets you manage your dependencies declared in an `ivy.xml` file in your Java Eclipse projects, or any other kind of project which needs dependency management. Apache IvyDE will contribute to the classpath of your Java project or you can make it retrieve your dependencies directly into your project. Last but not least Apache IvyDE offer editors of `ivy.xml` and `ivysettings.xml` files with completion. Get some preview here: https://ant.apache.org/ivy/ivyde/screenshots.html.
+
+=== [[majorchanges]]Major changes in this release:
+
+IvyDE can now manage credentials stored in a secured store. Rather than putting passwords for HTTP Authentication in a property file, IvyDE allows you to use the secure storage capability of Eclipse and your OS to store them. See the new "Security" panel in the global preferences of IvyDE.
+
+=== Compatibility:
+
+IvyDE now requires Java 7 and Eclipse 4.3 aka Eclipse Kepler as minimum.
+
+A more detailed release notes can be read at:
+https://ant.apache.org/ivy/ivyde/history/latest-milestone/release-notes.html
+
+Download the release at:
+https://ant.apache.org/ivy/ivyde/download.cgi
+
+Or use directly the Apache IvyDE's updatesite:
+https://www.apache.org/dist/ant/ivyde/updatesite
+
+Issues should be reported at:
+https://issues.apache.org/jira/browse/IVYDE
+
+More information can be found on the Apache IvyDE website:
+https://ant.apache.org/ivy/ivyde/
+
+== [[changes]]List of Changes in this Release
+
+List of changes since link:/ivy/ivyde/history/2.2.0.final/release-notes.html[Apache IvyDE 2.2.0 final]:
+
+* FIX: xml bomb in workspace causes hang in Ivy code during Search or Synchronize operations (jira:IVYDE-354[]) (thanks to Matt Hillsdon)
+* FIX: Deadlock in classpath container (jira:IVYDE-361[]) (thanks to Carsten Pfeiffer)
+* FIX: Typo in IvyResolveJob (jira:IVYDE-362[]) (thanks to Nicolas Gavalda)
+* FIX: User-selected configurations not checked in the viewer (jira:IVYDE-378[]) (thanks to Carsten Pfeiffer)
+* FIX: Fix ClassCastException (jira:IVYDE-386[])
+* FIX: Fix the issue where the IvyDE preferences couldn't be saved (jira:IVYDE-388[])
+
+* NEW: add support for OSGi 'Bundle-Classpath' directive (Ivy 2.4.0-rc1 is required)
+* NEW: basic support for the workspace resolver to find OSGi bundles managed by Ivy in the workspace (Ivy 2.4.0-rc2 is required)
+* NEW: Add support for storing securely credentials (thanks to Alexander Blaas)
+
+////
+ samples
+* NEW: new new new (jira:IVYDE-XXX[]) (thanks to XXX)
+* IMPROVE: improve improve improve (jira:IVYDE-XXX[]) (thanks to XXX)
+* FIX: fix fix fix (jira:IVYDE-XXX[]) (thanks to XXX)
+////
+
+== [[contrib]]Committers and Contributors
+
+Here is the list of people who have contributed source code and documentation up to this release. Many thanks to all of them, and also to the whole IvyDE community contributing ideas and feedback, and promoting the use of Apache IvyDE !
+
+=== Committers:
+
+* Maarten Coene
+* Xavier Hanin
+* Nicolas Lalev&eacute;e
+* Jon Schneider
+* Gilles Scokart
+
+=== Contributors:
+
+* Daniel Becheanu
+* Alexander Blaas
+* Peter Blstak
+* Clint Burghduff
+* Peter Chanthamynavong
+* Gregory Fernandez
+* Thomas Friol
+* Troy Gaines
+* Nicolas Gavalda
+* Eugene Goldfarb
+* Matt Goldspink
+* Will Gorman
+* Miguel Griffa
+* Stephen Haberman
+* Matt Hillsdon
+* Adam Karl
+* Bernd Kurz
+* Ivica Loncar
+* Jeffrey M. Metcalf
+* S&eacute;bastien Moran
+* Marko Niemi
+* Peter Oxenham
+* Carsten Pfeiffer
+* Joe Sortelli
+* Nathan Summers
+* Phillip Webb
+* James Wilkins
+* Anton Zagorulko
+
