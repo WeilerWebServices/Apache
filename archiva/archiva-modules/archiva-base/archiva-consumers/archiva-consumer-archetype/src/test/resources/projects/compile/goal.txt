@@ -1,1 +1,3 @@
-verify,-Dsurefire.useFile=false
+version https://git-lfs.github.com/spec/v1
+oid sha256:715b6bbc4ec5e4cbfd969bcb41b4873d75462890c4f3c77484e6fd35411241a1
+size 31

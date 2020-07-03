@@ -1,20 +1,3 @@
-# Numerous always-ignore extensions
-*.swp
-*.bak
-*.log
-*.patch
-
-# OS or Editor folders
-.DS_Store
-
-# Installation and build tools
-src/main/resources/ui/node/
-src/main/resources/ui/node_modules/
-src/main/resources/ui/bower_components/
-_generators/
-
-# Output directory
-src/main/resources/ui/dist/
-
-# Brunch folder for temporary files.
-src/main/resources/ui/tmp/
+version https://git-lfs.github.com/spec/v1
+oid sha256:95c42912b557d7d93c2f1184b0522ac4994219fb110a134b0c8149425e0cd1da
+size 358

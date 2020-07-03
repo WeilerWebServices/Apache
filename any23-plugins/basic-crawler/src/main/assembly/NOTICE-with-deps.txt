@@ -1,12 +1,3 @@
-Apache Any23
-Copyright 2011-2017 The Apache Software Foundation
-Copyright 2008-2011 Digital Enterprise Research Institute (DERI)
-
-This product includes software developed by
-The Apache Software Foundation (http://www.apache.org/).
-
-This product includes software developed by
-UniMI (http://www.unimi.it/)
-
-This product includes software developed by
-Yasser Ganjisaffar (http://code.google.com/p/crawler4j/)
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b24e217d8700bc720268607236bcba63473e2f88681a08d4c7840c1c7794350
+size 407

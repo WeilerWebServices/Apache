@@ -1,8 +1,3 @@
-/_site
-/.sass-cache
-/.jekyll-cache/
-/.jekyll-metadata
-/vendor
-/.idea
-/*.iml
-/.bundle/
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab9625522afc11cbcf03807b8d9ded970a2163b7c9b4db27c2cfe6faae8a027d
+size 86

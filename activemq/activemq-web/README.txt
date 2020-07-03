@@ -1,7 +1,3 @@
-Here be the home of the web-module.
-
-The demonstration webapp has been moved to the activemq-web-demo module.
-This module now only builds the jar for activemq-web.
-The javascript modules needed for the AJAX interface are included as 
-resources and served my the MessageListenerServlet
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d26db49e979b94c920f15fd2acdd6d26c2323668da3ace79f75c4d83e94ca69
+size 286

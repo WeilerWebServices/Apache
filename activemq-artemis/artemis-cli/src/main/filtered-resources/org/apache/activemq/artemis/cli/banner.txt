@@ -1,8 +1,3 @@
-     _        _               _
-    / \  ____| |_  ___ __  __(_) _____
-   / _ \|  _ \ __|/ _ \  \/  | |/  __/
-  / ___ \ | \/ |_/  __/ |\/| | |\___ \
- /_/   \_\|   \__\____|_|  |_|_|/___ /
- Apache ActiveMQ Artemis ${project.version}
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:273afe018dad46d69985bdb132b9ff0c4a7844e66119c55540adb927f2472b9f
+size 234

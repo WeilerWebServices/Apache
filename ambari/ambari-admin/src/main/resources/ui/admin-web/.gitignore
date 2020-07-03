@@ -1,10 +1,3 @@
-node_modules
-public
-.tmp
-.sass-cache
-app/bower_components
-test/bower_components
-heroku
-/views
-dist
-node
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d5f9d91a5c9ab3ee601c2c1f1ae896f22588f12515b99b3d81984bbd0fbaa1e
+size 103

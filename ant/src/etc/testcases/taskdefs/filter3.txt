@@ -1,1 +1,3 @@
-@property@
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e4c704f8b05d542d94c132f961482fee7f31417d77b9a64d691de9ea0a68ac6
+size 11

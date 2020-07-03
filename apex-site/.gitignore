@@ -1,6 +1,3 @@
-.tmp
-node_modules
-bower_components
-content
-docs/
-.idea/
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1e19f101978e9851a6348971990036393897810b6ef90e28f1c1de0210f5d0d
+size 55

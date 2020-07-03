@@ -1,1 +1,3 @@
-../CHANGELOG.txt
+version https://git-lfs.github.com/spec/v1
+oid sha256:efa4874ff824bf39b5d5f21ad78f24bcfe52f28009672dc4874d6bb5d6ee3874
+size 16

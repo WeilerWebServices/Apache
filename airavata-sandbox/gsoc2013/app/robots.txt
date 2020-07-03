@@ -1,3 +1,3 @@
-# robotstxt.org
-
-User-agent: *
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c3667a88cca089f4ed4bac5ed619f59a33bddad5e246a1b6e1032a8eb460bc5
+size 31

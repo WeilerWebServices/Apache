@@ -1,30 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-using System;
-
-namespace Apache.NMS.Stomp.Transport
-{
-	public delegate void SetTransport(ITransport transport, Uri uri);
-
-	public interface ITransportFactory
-	{
-		ITransport CreateTransport(Uri location);
-		ITransport CompositeConnect(Uri location);
-		ITransport CompositeConnect(Uri location, SetTransport setTransport);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:687e55615c8d519c2e66a204fce3269b8321f367a6a93f9a862ceec3fb8aae4f
+size 1130

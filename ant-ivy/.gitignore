@@ -1,23 +1,3 @@
-.classpath
-.DS_Store
-.idea
-*.iml
-.ivy2
-*~
-asciidoc/tutorial/log
-bin
-build
-doc/style/.svn
-doc/xooki/.svn
-doc/samples/target-platform/bundles
-doc/samples/target-platform/cache
-lib
-tagsdoc.properties
-test/jar-repos
-test/repositories/checkmodified/ivy-1.0.xml
-test/repositories/checkmodified/mod1.1-1.0.jar
-test/repositories/norevision/ivy-mod1.1.xml
-test/repositories/norevision/mod1.1.jar
-test/test-repo/bundlerepo/*.jar
-test/test-repo/ivyrepo/org.apache.ivy.osgi
-out/
+version https://git-lfs.github.com/spec/v1
+oid sha256:a223ef81ac64f907094060f0b04e2d9a09c80a7a4adc0c3450040c755dd2c848
+size 467

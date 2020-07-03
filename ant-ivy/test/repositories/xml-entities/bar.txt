@@ -1,1 +1,3 @@
-    <settings defaultResolver="myresolver"/>
+version https://git-lfs.github.com/spec/v1
+oid sha256:17aff9d4ad072c34c79b86004aa903c64d4680f1ccc101e9c7262f292fa59ada
+size 45

@@ -1,11 +1,3 @@
-alreadyConnected=Nodes already connected
-containsValidationErrors=Contains validation errors
-updatingDocument=Updating Document. Please wait...
-updatingSelection=Updating Selection. Please wait...
-collapse-expand=Collapse/Expand
-doubleClickOrientation=Doubleclick to change orientation
-close=Close
-error=Error
-done=Done
-cancel=Cancel
-ok=OK
+version https://git-lfs.github.com/spec/v1
+oid sha256:fdec4aa03bb095c2f7d58386b05b51f59f61372f3b893b94603cc029a9e11e8e
+size 340

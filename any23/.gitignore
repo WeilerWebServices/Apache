@@ -1,12 +1,3 @@
-target
-*.iml
-.idea
-.classpath
-.settings
-.project
-pom.xml.versionsBackup
-*~
-**/.externalToolBuilders/
-**/maven-eclipse.xml
-**/any23-site/
-**/nb*.xml
+version https://git-lfs.github.com/spec/v1
+oid sha256:d21b47a4b70ad174bd1fe95da784125ea9f55a705bdd44e2502ae6999b457dfb
+size 148

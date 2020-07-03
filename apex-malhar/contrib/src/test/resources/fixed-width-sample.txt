@@ -1,6 +1,3 @@
-YearMake_Model___________________________________Description_____________________________Price___Date______
-1997Ford_E350____________________________________ac, abs, moon___________________________3000.00_01:01:2016
-1999ChevyVenture "Extended Edition"______________________________________________________4900.00_01:01:2016
-1996Jeep_Grand Cherokee__________________________MUST SELL!air, moon roof, loaded_______ 4799.00_01:01:2016
-1999ChevyVenture "Extended Edition, Very Large"__________________________________________5000.00_01:01:2016
-_________Venture "Extended Edition"______________________________________________________4900.00_01:01:2016
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce3cbbc89242a15e61b2687fa4558bfe61a7ef81192b4216cdbfb8619907a2d0
+size 647

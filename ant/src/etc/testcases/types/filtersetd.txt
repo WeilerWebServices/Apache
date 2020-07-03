@@ -1,1 +1,3 @@
-@foo@ @bar@ @baz@ @blah@
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e1bb180aab4dd03e103e9fb390c29bae93b314fe8598ed4cc8d7161048a0fdc
+size 25

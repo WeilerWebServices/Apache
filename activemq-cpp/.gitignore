@@ -1,27 +1,3 @@
-*~
-*.swp
-.idea
-.idea/*
-*.iml
-*.ipr
-*.iws
-target
-.DS_Store
-.project
-.cproject
-.classpath
-.settings
-eclipse-classes
-build
-dependency-reduced-pom.xml
-activemq-cpp/autom4te.cache/
-activemq-cpp/m4/
-activemq-cpp/config/
-Makefile.in
-activemq-cpp/aclocal.m4
-activemq-cpp/config.h.in
-configure
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d18a1d5f9c99f7d7ae067e29b0e828ae15419f2ddc6720fbfe9ee53a88ca51b
+size 289

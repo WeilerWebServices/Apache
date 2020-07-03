@@ -1,4 +1,3 @@
-18 Jul 2016 17:06:46 DEBUG [MainThread] lock.py:97 - Got the handle of lock file.
-18 Jul 2016 17:06:46 INFO [MainThread] security.py:175 - Server certificate not exists, downloading
-18 Jul 2016 17:06:46 INFO [MainThread] security.py:188 - Downloading server cert from https://myurl:9440/cert/ca/
-18 Jul 2016 17:06:46 WARNING [MainThread] lock.py:60 - Releasing the lock.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5beb16d071badfb2f2c5f2324e75967c4a5c23ae788e5153026c46db012e907c
+size 370

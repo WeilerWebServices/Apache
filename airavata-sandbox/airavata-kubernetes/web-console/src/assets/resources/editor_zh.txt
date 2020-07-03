@@ -1,5 +1,3 @@
-askZoom=进入缩放(%25)
-properties=属性
-outline=轮廓
-tasks=任务
-help=帮助
+version https://git-lfs.github.com/spec/v1
+oid sha256:65315650ee447ea47368a93492a82ad4ca541076bf74bec7d862495330708bd9
+size 83

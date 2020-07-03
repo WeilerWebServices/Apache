@@ -1,4 +1,3 @@
-logs/*.log
-shipper-conf/input.config-*.json
-!shipper-conf/input.config-sample.json
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:37fcfa978d76f56c949f692fbfb1b3c6747148ba30b8909efe798251c2e9d709
+size 84

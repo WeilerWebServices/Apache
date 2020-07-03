@@ -1,26 +1,3 @@
-:mod:`airflow.hooks.slack_hook`
-===============================
-
-.. py:module:: airflow.hooks.slack_hook
-
-
-Module Contents
----------------
-
-.. py:class:: SlackHook(token=None, slack_conn_id=None)
-
-   Bases: :class:`airflow.hooks.base_hook.BaseHook`
-
-   Interact with Slack, using slackclient library.
-
-   
-   .. method:: __get_token(self, token, slack_conn_id)
-
-
-
-   
-   .. method:: call(self, method, api_params)
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a69860d9a11e6e30f18d7341dc512c8226563aef946cb54f72ada1e511ff5006
+size 418

@@ -1,7 +1,3 @@
-id:Not,controller:components/logic/NotController.php
-id:And,controller:components/logic/AndController.php
-id:Or,controller:components/logic/OrController.php
-id:Nand,controller:components/logic/NAndController.php
-id:XOR,controller:components/logic/XORController.php
-id:XNOR,controller:components/logic/XNORController.php
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7d20f68b3972072120c188eca81d80d24c8f0b13e784a7c8d53090d50cf3295
+size 321

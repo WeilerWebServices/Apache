@@ -1,26 +1,3 @@
-*~
-*.swp
-
-# Start of IntelliJ IDE files
-.idea
-.idea/*
-*.iml
-*.ipr
-*.iws
-# End of IntelliJ IDE files
-
-/build/
-*.class
-*.pyc
-*.pyo
-target
-
-.DS_Store
-
-# Start of Eclipse IDE files
-.project
-.classpath
-.settings
-.cproject
-eclipse-classes
-# End of Eclipse IDE files
+version https://git-lfs.github.com/spec/v1
+oid sha256:2a15667a1a22ea70079d526e6caa79027a785ae92a5bded661b50ecb1ed0218b
+size 260

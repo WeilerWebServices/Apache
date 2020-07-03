@@ -1,9 +1,3 @@
-**/target
-.idea
-**/*.iml
-**/lib
-.project
-.settings/
-.classpath
-wikipedia.xml
-ejb-jar.xml
+version https://git-lfs.github.com/spec/v1
+oid sha256:23654b5d748901fd16f91175066131c1de7cd396ec299aa3e479ff3451ef5b06
+size 89

@@ -1,8 +1,3 @@
-out/*
-*.pid
-Profile
-.env
-test-out
-test.db
-**/swagger/swagger.json
-**/swagger/swagger.yaml
+version https://git-lfs.github.com/spec/v1
+oid sha256:9941071ce93731f6d57349c7ec66b458988296bf521c85563f1b18ac6c426316
+size 89

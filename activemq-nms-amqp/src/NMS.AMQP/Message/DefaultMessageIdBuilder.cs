@@ -1,34 +1,3 @@
-using System.Text;
-using Apache.NMS.AMQP.Provider.Amqp;
-
-namespace Apache.NMS.AMQP.Message
-{
-    public class DefaultMessageIdBuilder : INmsMessageIdBuilder
-    {
-        private readonly StringBuilder builder = new StringBuilder();
-        private int idPrefixLength = -1;
-
-        public object CreateMessageId(string producerId, long messageSequence)
-        {
-            if (idPrefixLength < 0)
-            {
-                Initialize(producerId);
-            }
-            
-            builder.Length = idPrefixLength;
-            builder.Append(messageSequence);
-            
-            return builder.ToString();
-        }
-
-        private void Initialize(string producerId)
-        {
-            if (!AmqpMessageIdHelper.HasMessageIdPrefix(producerId))
-            {
-                builder.Append(AmqpMessageIdHelper.NMS_ID_PREFIX);
-            }
-            builder.Append(producerId).Append("-");
-            idPrefixLength = builder.Length;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac89568b9abe2ae5c2f7268d1d91cb4b24ea3b9003fec710e60d543cc4157d81
+size 973

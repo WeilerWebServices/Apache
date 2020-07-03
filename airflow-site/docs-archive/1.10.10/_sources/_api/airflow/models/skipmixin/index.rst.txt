@@ -1,35 +1,3 @@
-:mod:`airflow.models.skipmixin`
-===============================
-
-.. py:module:: airflow.models.skipmixin
-
-
-Module Contents
----------------
-
-.. py:class:: SkipMixin
-
-   Bases: :class:`airflow.utils.log.logging_mixin.LoggingMixin`
-
-   
-   .. method:: skip(self, dag_run, execution_date, tasks, session=None)
-
-      Sets tasks instances to skipped from the same dag run.
-
-      :param dag_run: the DagRun for which to set the tasks to skipped
-      :param execution_date: execution_date
-      :param tasks: tasks to skip (not task_ids)
-      :param session: db session to use
-
-
-
-   
-   .. method:: skip_all_except(self, ti, branch_task_ids)
-
-      This method implements the logic for a branching operator; given a single
-      task ID or list of task IDs to follow, this skips all other tasks
-      immediately downstream of this operator.
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:7fa05b3801fbdb2a5662cf2252c60ef2325ac1fa0b85b3dc3a33c46649a94983
+size 842

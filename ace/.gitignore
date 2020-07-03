@@ -1,16 +1,3 @@
-.metadata/
-cnf/cache/
-cnf/*/.obrcache/
-.gradle/
-.recommenders/
-*/generated/
-*/bin/
-*/build/
-*/bin_test/
-*/reports/
-*~
-*/.settings/
-*/bundle-cache
-*/store
-*/test-output
-rat-report.xml
+version https://git-lfs.github.com/spec/v1
+oid sha256:759d4eb01c0099d37517bcfa8bcc916a582509a469b5ad42aee626b910750d48
+size 183

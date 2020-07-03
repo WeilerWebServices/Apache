@@ -1,33 +1,3 @@
-:mod:`airflow.contrib.sensors.cassandra_table_sensor`
-=====================================================
-
-.. py:module:: airflow.contrib.sensors.cassandra_table_sensor
-
-
-Module Contents
----------------
-
-.. py:class:: CassandraTableSensor(table, cassandra_conn_id, *args, **kwargs)
-
-   Bases: :class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`
-
-   Checks for the existence of a table in a Cassandra cluster.
-
-   For example, if you want to wait for a table called 't' to be created
-   in a keyspace 'k', instantiate it as follows:
-
-   >>> cassandra_sensor = CassandraTableSensor(table="k.t",
-   ...                                         cassandra_conn_id="cassandra_default",
-   ...                                         task_id="cassandra_sensor")
-
-   .. attribute:: template_fields
-      :annotation: = ['table']
-
-      
-
-   
-   .. method:: poke(self, context)
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b6d9a55e6d356d436e79e13a096b2fc8109b98785b310d6d463da679d4dee7e
+size 887

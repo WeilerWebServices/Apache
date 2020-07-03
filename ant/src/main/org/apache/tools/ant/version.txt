@@ -1,2 +1,3 @@
-VERSION=${project.version}
-DATE=${TODAY}
+version https://git-lfs.github.com/spec/v1
+oid sha256:10064f2e158c7b86025bc2f47c0eb83a2225fa74cc41e9bd6f50edd46ce850de
+size 41

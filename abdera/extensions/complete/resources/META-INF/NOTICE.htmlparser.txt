@@ -1,7 +1,3 @@
-
-   nu.validator html parser
-   Copyright (c) 2007 Henri Sivonen
-
-   This product includes software developed at
-     http://about.validator.nu/htmlparser/
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:82661807b2a4f13d2311978c45b920ff01a6e86c58ba502d2a75f437cfc14488
+size 157

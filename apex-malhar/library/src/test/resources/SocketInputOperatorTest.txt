@@ -1,1 +1,3 @@
-Malhar repository contains open source operator and codec library that can be used with the Apache Apex (incubating) platform to build Realtime streaming applications. In addition to the library there are benchmark, contrib, examples, webdemos and samples folders available. Examples contain example applications built using the library operators. Webdemos contain webpages for the examples. Benchmark contains performance testing applications. Contrib contains additional operators that interface with third party softwares. Samples contain some sample code that shows how to use the library operators.
+version https://git-lfs.github.com/spec/v1
+oid sha256:2abf80fa8255e6dd4843ffb51e92ec6e5db764b4843f3c9c9c10512d22cee8f2
+size 604

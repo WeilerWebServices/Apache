@@ -1,5 +1,3 @@
-This is a Subversion repository; use the 'svnadmin' tool to examine
-it.  Do not add, delete, or modify files here unless you know how
-to avoid corrupting the repository.
-
-Visit http://subversion.tigris.org/ for more information.
+version https://git-lfs.github.com/spec/v1
+oid sha256:223acab537644691504d07aa7138e1588e4a7e9ad621862382bc0a6353ea5e01
+size 229

@@ -1,8 +1,3 @@
-/.classpath
-/.project
-/.settings/
-/target/
-/*.iml
-/.idea
-/examples.conf
-/conf/env.sh
+version https://git-lfs.github.com/spec/v1
+oid sha256:178b65c7419e19809b07a1f3918d71c2f48978a6b1dc6d0eb9a1299ebd7ffc74
+size 85

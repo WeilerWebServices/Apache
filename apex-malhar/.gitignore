@@ -1,14 +1,3 @@
-.DS_Store
-.classpath
-.project
-.settings/
-.metadata/
-.idea/
-target/
-/front/dist_tmp
-*.iml
-npm-debug.log
-nb-configuration.xml
-hadoop.log
-site/
-.checkstyle
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbd3daf43c864b73c558605d4631da0297648e5635aec126c4772d63d9791189
+size 153

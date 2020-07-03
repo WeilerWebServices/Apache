@@ -1,16 +1,3 @@
-
-
-## Temporarily using ANT compile the Aurora Management code.
-## TODO: integrate with maven build system, instead of using ANT
-
-#In the following directory run the compilation command:
-airavata/modules/cloud/MarathonIntegration/src
-
-#Compilation command
-ant all
-
-#Run command
-## TODO: add the command to run and test the code
-
-## Add sample output that shows the Marathon code working
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1cb34b45251070a303ad1f68065dd73af56afaa16f4bf33f1ac0e133585ed86f
+size 387

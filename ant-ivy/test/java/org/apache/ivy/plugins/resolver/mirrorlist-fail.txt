@@ -1,2 +1,3 @@
-https://repo1.maven.org/_this_should_not_exist/
-https://repo1.maven.org/_this_should_not_exist_either/
+version https://git-lfs.github.com/spec/v1
+oid sha256:1505f518ec31582879abf74919c38dba5f44a0ac6087ea93cff1c85dd215c113
+size 103

@@ -1,24 +1,3 @@
-=========================================================================
-==  NOTICE file corresponding to the section 4 d of                    ==
-==  the Apache License, Version 2.0,                                   ==
-==  in this case for the Apache ActiveMQ distribution.                 ==
-=========================================================================
-
-Apache ActiveMQ-CPP
-Copyright 2007-2019 The Apache Software Foundation
-
-This product includes software developed by
-The Apache Software Foundation (http://www.apache.org/).
-
-=========================================================================
-==  Doxygen Automake Macro Notice                                      ==
-=========================================================================
-
-This product includes software developed by the Oren Ben-Kiki
-http://ben-kiki.org/oren/doxample/
-
-=========================================================================
-==  ZLib Compression / Decompression Library Notice                    ==
-=========================================================================
-This product includes software developed by the Jean-loup Gailly and Mark Adler
-http://www.zlib.net/
+version https://git-lfs.github.com/spec/v1
+oid sha256:6defa10fa53d4a074499703b04b6b43b99c5384cf17f535be91c04ed16ff262c
+size 1189

@@ -1,15 +1,3 @@
-Apache Any23
-Copyright 2011-2012 The Apache Software Foundation
-Copyright 2008-2011 Digital Enterprise Research Institute (DERI)
-
-This product includes software developed by
-The Apache Software Foundation (http://www.apache.org/).
-
-This product includes software developed by
-Aduna Software (http://www.aduna-software.org/)
-
-This product includes software developed by
-MetaStuff, Ltd. (http://dom4j.org)
-
-ASM - Copyright (c) 2000-2011 INRIA, France Telecom
-All rights reserved. (http://asm.ow2.org/)
+version https://git-lfs.github.com/spec/v1
+oid sha256:9db95ba8db35101b6ebddedac23c6a0cd8b0e88cbdf69d15eeb2846360b2c96d
+size 500

@@ -1,21 +1,3 @@
-Apache Any23
-Copyright 2011-2018 The Apache Software Foundation
-Copyright 2008-2011 Digital Enterprise Research Institute (DERI)
-
-This product includes software developed by
-The Apache Software Foundation (http://www.apache.org/).
-
-This product includes software developed by
-Aduna Software (http://www.aduna-software.org/)
-
-This product includes software developed by
-MetaStuff, Ltd. (http://dom4j.org)
-
-ASM - Copyright (c) 2000-2011 INRIA, France Telecom
-All rights reserved. (http://asm.ow2.org/)
-
-This product includes software developed by
-jQuery Foundation (http://jquery.org/)
-
-This product includes software developed by
-Twitter, Inc (http://twitter.github.com/bootstrap/)
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd0c3aeb77f478e0ba4e8984696ebfc720a93c0e3df48288ab88f7bad811a5b4
+size 681

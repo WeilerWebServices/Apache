@@ -1,1 +1,3 @@
-mysqlclient==1.4.2.post1
+version https://git-lfs.github.com/spec/v1
+oid sha256:996155e228b82bba3e62a49c1ac3cd4b34024180614ef4c586412a22aab10bf6
+size 25

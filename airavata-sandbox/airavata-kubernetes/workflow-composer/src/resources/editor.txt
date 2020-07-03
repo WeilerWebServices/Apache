@@ -1,5 +1,3 @@
-askZoom=Enter zoom (%)
-properties=Properties
-outline=Outline
-tasks=Tasks
-help=Help
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8a0c378b027e329b0d69cbc1f46d83ca0e0058fed1046fb4ab3bd04bacb67dc
+size 83

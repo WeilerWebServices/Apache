@@ -1,10 +1,3 @@
-target
-.settings
-.classpath
-.project
-/bin/
-node_modules/
-logs/
-node/
-*.pid
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:4119e9ecf85b7fd0b3851abf3f72ab52097cadb8a7de1583737e765e64fd6737
+size 76

@@ -1,5 +1,3 @@
-askZoom=Zoom eingeben (%)
-properties=Eigenschaften
-outline=Uebersicht
-tasks=Aufgaben
-help=Hilfe
+version https://git-lfs.github.com/spec/v1
+oid sha256:97ea34c67747ab78609426231d393064dadd4e66e4c679d139227ae1830c0dec
+size 96

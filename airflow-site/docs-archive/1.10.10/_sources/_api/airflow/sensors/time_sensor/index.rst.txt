@@ -1,24 +1,3 @@
-:mod:`airflow.sensors.time_sensor`
-==================================
-
-.. py:module:: airflow.sensors.time_sensor
-
-
-Module Contents
----------------
-
-.. py:class:: TimeSensor(target_time, *args, **kwargs)
-
-   Bases: :class:`airflow.sensors.base_sensor_operator.BaseSensorOperator`
-
-   Waits until the specified time of the day.
-
-   :param target_time: time after which the job succeeds
-   :type target_time: datetime.time
-
-   
-   .. method:: poke(self, context)
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1b44de288aa9fbd19f2bf979e89dc6f043603a122caf991c6a26d451ba05f1d9
+size 465

@@ -1,17 +1,3 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-
-# compiled output
-/dist
-/tmp
-
-# dependencies
-/node_modules
-/bower_components
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f766f1f7e65d0639c36ba4594548d200af5ab62fdf3228ca2d639c69050eb07
+size 247

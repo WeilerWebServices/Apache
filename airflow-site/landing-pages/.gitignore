@@ -1,5 +1,3 @@
-node_modules/
-dist/
-site/data/webpack.json
-resources/
-site/static/_gen/
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0a6ea3edaf2892178d76d5be8cebc44d68ae32cc9a8a5bbe067e26db8760dd7
+size 72

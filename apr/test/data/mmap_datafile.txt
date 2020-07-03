@@ -1,1 +1,3 @@
-This is the MMAP data file.
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f09aae9042bf877a2f27a2386c0572cdd592a5a780ec3997eac5372445cfde2
+size 28

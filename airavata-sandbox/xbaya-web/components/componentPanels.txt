@@ -1,2 +1,3 @@
-id:calc,label:Calculator,component_list:components/calculator/components_calculator.txt
-id:logic,label:Logic,component_list:components/logic/components_logic.txt 
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b442eb43eb9b5a1e65a9acf6d591409662ed7e4298563a41e6837ba22ea5b95
+size 162

@@ -1,35 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-using Apache.NMS.ActiveMQ.Commands;
-using System;
-
-namespace Apache.NMS.ActiveMQ
-{
-	/// <summary>
-        /// Summary description for DestinationFilter.
-        /// </summary>
-        public abstract class DestinationFilter {
-                public const String ANY_DESCENDENT = ">";
-                public const String ANY_CHILD = "*";
-
-                public bool matches(ActiveMQMessage message) {
-                        return matches(message.Destination);
-                }
-
-                public abstract bool matches(ActiveMQDestination destination);
-        }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d24f89428f220d35982fa8fbc72b17e30365b8d0883fed4b14b76833c73842a2
+size 1374

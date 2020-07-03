@@ -1,8 +1,3 @@
-
-      <ha-policy>
-         <replication>
-            <master>
-               <vote-on-replication-failure>true</vote-on-replication-failure>
-            </master>
-         </replication>
-      </ha-policy>
+version https://git-lfs.github.com/spec/v1
+oid sha256:52f7676c779889ffe2c86ad5477396dd63dba3020c5e1d5d987006ff5436fe70
+size 207

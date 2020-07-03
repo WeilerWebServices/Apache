@@ -1,9 +1,3 @@
-target
-.classpath
-.project
-.settings
-.idea
-*.iml
-lib
-offline
-*.patch
+version https://git-lfs.github.com/spec/v1
+oid sha256:56b80af0fabf85590e1291dcc55e2d0de40a7050a0697893531679fc9f2f1177
+size 69

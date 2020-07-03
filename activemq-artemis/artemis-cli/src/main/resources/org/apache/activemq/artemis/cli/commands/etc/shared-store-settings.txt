@@ -1,8 +1,3 @@
-
-      <ha-policy>
-         <shared-store>
-            <${master-slave}>
-               <failover-on-shutdown>${failover-on-shutdown}</failover-on-shutdown>
-            </${master-slave}>
-         </shared-store>
-      </ha-policy>
+version https://git-lfs.github.com/spec/v1
+oid sha256:4107381c65d9ed10b7531a35a0e9ffa39858725669cfb1c4881eace2883aeb41
+size 232

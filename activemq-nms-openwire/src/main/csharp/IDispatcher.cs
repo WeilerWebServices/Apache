@@ -1,30 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-using Apache.NMS.ActiveMQ.Commands;
-
-namespace Apache.NMS.ActiveMQ
-{
-    /// <summary>
-    /// Interface that provides for a Class to provide dispatching service for
-    /// an OpenWire MessageDispatch command.
-    /// </summary>
-    public interface IDispatcher
-    {
-        void Dispatch(MessageDispatch messageDispatch);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:41b17f24d31bc3983c409bc92e5f8cd9eec285fbea0c51cd1f993687d0e8c77f
+size 1136

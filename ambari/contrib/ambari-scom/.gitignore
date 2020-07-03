@@ -1,11 +1,3 @@
-.classpath
-.project
-.settings
-.idea/
-.iml/
-target
-*.iml
-pass.txt
-.DS_Store
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a5f226c1647a4f03b944e5470ed6a3557f49d30a90c6afd56f532fe4ac723c7b
+size 77

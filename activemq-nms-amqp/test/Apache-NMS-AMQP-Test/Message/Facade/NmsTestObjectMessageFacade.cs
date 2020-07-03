@@ -1,31 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-using Apache.NMS.AMQP.Message.Facade;
-
-namespace NMS.AMQP.Test.Message.Facade
-{
-    public class NmsTestObjectMessageFacade : NmsTestMessageFacade, INmsObjectMessageFacade
-    {
-        public object Body { get; set; }
-
-        public override void ClearBody()
-        {
-            Body = null;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a57bc80bc5fdb249b3122845c4140a7cd0c51e0e320557a8eb193e4d8a2e44e4
+size 1116

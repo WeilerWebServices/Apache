@@ -1,30 +1,3 @@
-:mod:`airflow.operators.latest_only_operator`
-=============================================
-
-.. py:module:: airflow.operators.latest_only_operator
-
-
-Module Contents
----------------
-
-.. py:class:: LatestOnlyOperator
-
-   Bases: :class:`airflow.models.BaseOperator`, :class:`airflow.models.SkipMixin`
-
-   Allows a workflow to skip tasks that are not running during the most
-   recent schedule interval.
-
-   If the task is run outside of the latest schedule interval, all
-   directly downstream tasks will be skipped.
-
-   .. attribute:: ui_color
-      :annotation: = #e9ffdb
-
-      
-
-   
-   .. method:: execute(self, context)
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:dfb8ca6266e63bed7240ce4e81b6fc45659803fb64fd0ee129dc928273b8b67f
+size 626

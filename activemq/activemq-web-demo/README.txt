@@ -1,12 +1,3 @@
-Welcome to the Web Demo which shows how to use ActiveMQ with REST and Ajax services
-
-To run the console you must install a recent distro of Maven
-such as version 2.0.4 or later
-	
-		http://maven.apache.org/
-
-You can then run the ActiveMQ Web Console via the following command.
-
-	mvn jetty6:run
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1774a566b062b76f3baa6625b116540a1012e3acf3de929bc5ca7dc079c4dfe4
+size 295

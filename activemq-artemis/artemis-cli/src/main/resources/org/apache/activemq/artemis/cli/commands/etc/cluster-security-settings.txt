@@ -1,4 +1,3 @@
-
-      <cluster-user>${cluster-user}</cluster-user>
-
-      <cluster-password>${cluster-password}</cluster-password>
+version https://git-lfs.github.com/spec/v1
+oid sha256:ef78abf849a1b8061580beb2664b185d160cece4067f6d9dad23c833a5504683
+size 116

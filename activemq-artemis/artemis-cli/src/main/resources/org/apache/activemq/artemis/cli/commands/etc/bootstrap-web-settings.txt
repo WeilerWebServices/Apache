@@ -1,6 +1,3 @@
-   <!-- The web server is only bound to localhost by default -->
-   <web bind="${web.protocol}://${http.host}:${http.port}" path="web"${extra.web.attributes}>
-       <app url="activemq-branding" war="activemq-branding.war"/>
-       <app url="artemis-plugin" war="artemis-plugin.war"/>
-       <app url="console" war="console.war"/>
-   </web>
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb3b1114dae447a19df77b612d69983ba4aa7319025196dcefe2c37d7904a366
+size 341

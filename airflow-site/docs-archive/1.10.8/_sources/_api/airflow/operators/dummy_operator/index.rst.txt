@@ -1,27 +1,3 @@
-:mod:`airflow.operators.dummy_operator`
-=======================================
-
-.. py:module:: airflow.operators.dummy_operator
-
-
-Module Contents
----------------
-
-.. py:class:: DummyOperator(*args, **kwargs)
-
-   Bases: :class:`airflow.models.BaseOperator`
-
-   Operator that does literally nothing. It can be used to group tasks in a
-   DAG.
-
-   .. attribute:: ui_color
-      :annotation: = #e8f7e4
-
-      
-
-   
-   .. method:: execute(self, context)
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:74771acec14d18047acc766dc1003c651e37b96e7ac50de98e511e2098297244
+size 454

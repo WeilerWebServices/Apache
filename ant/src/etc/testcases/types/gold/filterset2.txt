@@ -1,5 +1,3 @@
-This is a test file for filters with non default markers
-@cccc@ - should not change
-3333 - should change
-^dddd% - should not change
-4444 - should change
+version https://git-lfs.github.com/spec/v1
+oid sha256:fda7e2cb68d3a859889f3d7ecbcd003eaf34077cf2bc53ab3db083ebc573e574
+size 153

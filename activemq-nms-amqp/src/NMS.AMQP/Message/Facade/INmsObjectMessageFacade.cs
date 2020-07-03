@@ -1,24 +1,3 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one or more
- * contributor license agreements.  See the NOTICE file distributed with
- * this work for additional information regarding copyright ownership.
- * The ASF licenses this file to You under the Apache License, Version 2.0
- * (the "License"); you may not use this file except in compliance with
- * the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-namespace Apache.NMS.AMQP.Message.Facade
-{
-    public interface INmsObjectMessageFacade : INmsMessageFacade
-    {
-        object Body { get; set; }        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7bc4a234e4c50048af38ee333cffc774a23cef14fec43b18799983e5db43bdcf
+size 966

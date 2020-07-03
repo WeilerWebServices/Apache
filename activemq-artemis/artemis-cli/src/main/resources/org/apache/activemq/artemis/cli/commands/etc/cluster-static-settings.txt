@@ -1,11 +1,3 @@
-      <cluster-connections>
-         <cluster-connection name="my-cluster">
-            <connector-ref>artemis</connector-ref>
-            <message-load-balancing>${message-load-balancing}</message-load-balancing>
-            <max-hops>${max-hops}</max-hops>
-            <static-connectors>
-${connectors-list}
-            </static-connectors>
-         </cluster-connection>
-      </cluster-connections>
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0a95db9b5aed0843d603c2ef3bf4103737418848577aced6767b0fd65e561a6
+size 404

@@ -1,1 +1,3 @@
-${project.version}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc2484c29c8c4ba97fd9bbb0c9b86b0386775783ed99fcbd6efec230d9bcf063
+size 18

@@ -1,6 +1,3 @@
-
-    <connectors>
-        <!-- Connector used to be announced through cluster connections and notifications -->
-        <connector name="artemis">tcp://${host}:${default.port}</connector>
-    </connectors>
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad7b256ec6fafd23b1a6738bb996f9632381ba232a6cfd740692a6b854e1b23d
+size 207

@@ -1,36 +1,3 @@
-:mod:`airflow.contrib.hooks.segment_hook`
-=========================================
-
-.. py:module:: airflow.contrib.hooks.segment_hook
-
-.. autoapi-nested-parse::
-
-   This module contains a Segment Hook
-   which allows you to connect to your Segment account,
-   retrieve data from it or write to that file.
-
-   NOTE:   this hook also relies on the Segment analytics package:
-           https://github.com/segmentio/analytics-python
-
-
-
-Module Contents
----------------
-
-.. py:class:: SegmentHook(segment_conn_id='segment_default', segment_debug_mode=False, *args, **kwargs)
-
-   Bases: :class:`airflow.hooks.base_hook.BaseHook`
-
-   
-   .. method:: get_conn(self)
-
-
-
-   
-   .. method:: on_error(self, error, items)
-
-      Handles error callbacks when using Segment with segment_debug_mode set to True
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:2db516cc8cb5159bd1018bfc4c8d3124c606797d5f19a2ca18b4f4274643a3e6
+size 800

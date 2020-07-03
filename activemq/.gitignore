@@ -1,33 +1,3 @@
-*~
-*.swp
-.idea
-.idea/*
-*.iml
-*.ipr
-*.iws
-target
-.DS_Store
-.project
-.classpath
-.settings
-eclipse-classes
-activemq-unit-tests/ActiveMQConnections.dot
-activemq-unit-tests/KahaDB
-activemq-unit-tests/broker
-activemq-unit-tests/derby.log
-activemq-unit-tests/derbyDb
-activemq-unit-tests/LevelDB
-activemq-unit-tests/networkedBroker
-activemq-unit-tests/shared
-activemq-data
-activemq-leveldb-store/.cache
-activemq-leveldb-store/.cache-main
-activemq-leveldb-store/.cache-tests
-activemq-leveldb-store/.tmpBin
-activemq-runtime-config/src/main/resources/activemq.xsd
-activemq-amqp/amqp-trace.txt
-data/
-dependency-reduced-pom.xml
-velocity.log
-
-/.metadata
+version https://git-lfs.github.com/spec/v1
+oid sha256:48ba021efbde1363f4c8c942cf69ca700f182d8f095092aa3cbe6c7b06fe50f0
+size 640

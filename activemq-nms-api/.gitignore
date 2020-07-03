@@ -1,13 +1,3 @@
-
-.vs/
-
-bin/
-obj/
-build/
-.idea/
-*.csproj.user
-nms.sln.startup.json
-build/
-package/
-nms.sln.DotSettings.user
-tools/
+version https://git-lfs.github.com/spec/v1
+oid sha256:d3534b1da45895477ee1662824a6cbb41f260917421b366d93b2814ca5d4e722
+size 114

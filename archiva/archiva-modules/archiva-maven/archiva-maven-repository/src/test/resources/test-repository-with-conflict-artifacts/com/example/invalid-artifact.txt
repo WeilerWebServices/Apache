@@ -1,1 +1,3 @@
-invalid path
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b527e932047963ec91bb3fcd89f0e76b94c57078fa51e6260c53d11b79edf9e
+size 13

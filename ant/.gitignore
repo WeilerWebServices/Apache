@@ -1,32 +1,3 @@
-*.el
-*.ipr
-*.iws
-*.pif
-*.snap
-.ant.properties
-.classpath
-.DS_Store
-.project
-.settings
-bin
-apache-ant-1.*
-bootstrap
-build
-dist
-distribution
-java-repository
-patch.tar.gz
-patch.txt
-target
-velocity.log*
-lib/optional/*.jar
-src/tests/antunit/core/output
-.idea
-*.iml
-/src/GPATH
-/src/GRTAGS
-/src/GSYMS
-/src/GTAGS
-/log.xml
-lib/optional/license.txt
-/release/distrib/
+version https://git-lfs.github.com/spec/v1
+oid sha256:259ea53d9673c10857199be44fd9c0844bea8a3beb92ceab9dff9c8900c3d2a4
+size 357

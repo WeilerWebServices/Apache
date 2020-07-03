@@ -1,3 +1,3 @@
-
-         <!-- AMQP Acceptor.  Listens on default AMQP port for AMQP traffic.-->
-         <acceptor name="amqp">tcp://${host}:${amqp.port}?tcpSendBufferSize=1048576;tcpReceiveBufferSize=1048576;protocols=AMQP;useEpoll=true;amqpCredits=1000;amqpLowCredits=300;amqpMinLargeMessageSize=102400;amqpDuplicateDetection=true</acceptor>
+version https://git-lfs.github.com/spec/v1
+oid sha256:a9e37937d3fd31844a94518188ce9b04051402116feac981b78e49d736905584
+size 329

@@ -1,26 +1,3 @@
-:mod:`airflow.hooks.samba_hook`
-===============================
-
-.. py:module:: airflow.hooks.samba_hook
-
-
-Module Contents
----------------
-
-.. py:class:: SambaHook(samba_conn_id)
-
-   Bases: :class:`airflow.hooks.base_hook.BaseHook`
-
-   Allows for interaction with an samba server.
-
-   
-   .. method:: get_conn(self)
-
-
-
-   
-   .. method:: push_from_local(self, destination_filepath, local_filepath)
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b91efc1adbfc62a39c16664121d54b6c19a14ca9618053d5deeecf646659a317
+size 402

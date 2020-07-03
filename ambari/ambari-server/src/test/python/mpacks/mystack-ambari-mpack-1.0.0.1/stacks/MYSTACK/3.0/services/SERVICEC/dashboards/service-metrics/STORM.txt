@@ -1,7 +1,3 @@
-Supervisors
-Total Tasks
-Total Slots
-Used Slots
-Topologies
-Total Executors
-Free Slots
+version https://git-lfs.github.com/spec/v1
+oid sha256:2c5129a4229493f4ea4becf55286babb57a79af96c9930914f8a804dd74ad0ee
+size 85

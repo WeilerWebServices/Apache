@@ -1,21 +1,3 @@
-target
-.settings
-.classpath
-.project
-/bin/
-node_modules/
-logs/
-node/
-*.pid
-.idea/
-.iml/
-.DS_Store
-**/target/
-*.pyc
-*.py~
-**/*.iml
-.hg
-.hgignore
-.hgtags
-.flattened-pom.xml
-mkdocs-site
+version https://git-lfs.github.com/spec/v1
+oid sha256:da3b7ff2094e8aaac09fccac352b31a0fce477c7a5b77e7231b1ba595be63298
+size 183

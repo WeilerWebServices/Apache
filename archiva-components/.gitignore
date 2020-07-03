@@ -1,27 +1,3 @@
-target
-build
-
-#idea files
-*.iml
-.idea
-*.ipr
-*.iws
-out/
-
-#jenv
-.java-version
-
-.DS_Store
-.extract
-.site-content/
-
-#eclipse files
-.project
-.classpath
-.settings/
-
-#netbeans file
-nbactions.xml
-nb-configuration.xml
-
-velocity.log
+version https://git-lfs.github.com/spec/v1
+oid sha256:8513a3e4d23aa84da87170bf2cdcc021f9d59111728585bb044fb19760d4275f
+size 223

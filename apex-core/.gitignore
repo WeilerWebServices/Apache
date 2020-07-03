@@ -1,17 +1,3 @@
-.DS_Store
-.classpath
-.project
-.settings/
-.metadata/
-target/
-node_modules/
-/malhar
-/malhar-ui-console
-/console
-*.iml
-.idea/
-*~
-x-java
-nb-configuration.xml
-gateway/src/main/htdocs
-site/
+version https://git-lfs.github.com/spec/v1
+oid sha256:a86acf50ab30472f4415d59714cbc17ddd7adf6212afa6b0e55f96ec1026989e
+size 184

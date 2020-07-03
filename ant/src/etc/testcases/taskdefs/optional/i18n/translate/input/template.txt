@@ -1,1 +1,3 @@
-@This@ @is@ @a@ @demo@ @file@ @for@ @the@ translate@_task@ @missing_token@.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b6a021331ec6a4bcf6d42fed9674b61c6185e7de4757ac12bab7f85e0177a0f4
+size 76

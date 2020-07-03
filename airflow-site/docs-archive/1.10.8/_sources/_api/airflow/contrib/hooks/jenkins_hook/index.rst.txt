@@ -1,21 +1,3 @@
-:mod:`airflow.contrib.hooks.jenkins_hook`
-=========================================
-
-.. py:module:: airflow.contrib.hooks.jenkins_hook
-
-
-Module Contents
----------------
-
-.. py:class:: JenkinsHook(conn_id='jenkins_default')
-
-   Bases: :class:`airflow.hooks.base_hook.BaseHook`
-
-   Hook to manage connection to jenkins server
-
-   
-   .. method:: get_jenkins_server(self)
-
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:dbb94d75cb8e1a615b137847010819c786dbadde42fd669217af1d8f0f50f8eb
+size 373

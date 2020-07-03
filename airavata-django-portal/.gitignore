@@ -1,17 +1,3 @@
-*.pyc
-*.sqlite3
-settings_local.py
-settings_local*.py
-.DS_Store
-node_modules
-.idea/
-dist/
-ENV
-venv/
-.vscode/
-jsconfig.json
-airavata_django_portal.egg-info
-# AIRAVATA-2951 package-lock.json files cause the build to fail when deploying to server
-package-lock.json
-# mkdocs
-site/
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ae6c6b8726a441d1ccef0005a46d176cab68d52b6d16f1de19963bd9899e3e0
+size 276
